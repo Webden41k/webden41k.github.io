@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Era.Bet HTML</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="l-header">
+          <div class="logo">
+            <a href="index-login.html" class="img"></a>
+          </div>
+          <ul class="nav-head">
+            <li class="item active"><a href="index-full.html">Главная</a></li>
+            <li class="item"><a href="lavka.html">Лавка</a></li>
+            <li class="item"><a href="statistics.html">Статистика</a></li>
+            <li class="item"><a href="actions.html">Акции</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <form class="search-form" action="">
+            <input class="btn-search" type="submit" value="">
+            <input class="text-search" type="text" placeholder="Что ищем?">
+          </form>
+        </div>
+        <div class="actions">
+          <div class="switch">
+            <label class="label">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="dec">
+            <a href="">dec</a>
+          </div>
+          <div class="lang">
+            <div class="current-lang"><span class="flag"><img src="img/flags/ru.svg" alt=""></span> Ru</div>
+            <ul class="list-lang">
+              <li class="item ru"><a href="#"><span class="flag"><img src="img/flags/ru.svg" alt=""></span> Ru</a></li>
+              <li class="item ua"><a href="#"><span class="flag"><img src="img/flags/ua.svg" alt=""></span> Ua</a></li>
+              <li class="item eng"><a href="#"><span class="flag"><img src="img/flags/en.svg" alt=""></span> En</a></li>
+            </ul>
+          </div>
+          <div class="theme dark">
+            <a href="javascript:void(0);" class="theme-btn"></a>
+            <ul class="list-themes">
+              <li class="item dark">Dark</li>
+              <li class="item light ">Light</li>
+              <li class="item cyber">Cyber</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="nav-btn-m only-m">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        
+        <div class="nav-m">
+          <div class="actions">
+            <div class="switch">
+              <label class="label">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="dec">
+              <a href="">dec</a>
+            </div>
+            <div class="lang">
+              <div class="current-lang"><span class="flag"><img src="img/flags/ru.svg" alt=""></span> Ru</div>
+              <ul class="list-lang">
+                <li class="item ru"><a href="#"><span class="flag"><img src="img/flags/ru.svg" alt=""></span> Ru</a></li>
+                <li class="item ua"><a href="#"><span class="flag"><img src="img/flags/ua.svg" alt=""></span> Ua</a></li>
+                <li class="item eng"><a href="#"><span class="flag"><img src="img/flags/en.svg" alt=""></span> En</a></li>
+              </ul>
+            </div>
+            <div class="theme dark">
+              <a href="javascript:void(0);" class="theme-btn"></a>
+              <ul class="list-themes">
+                <li class="item dark">Dark</li>
+                <li class="item light ">Light</li>
+                <li class="item cyber">Cyber</li>
+              </ul>
+            </div>
+          </div>
+          
+          <ul class="nav-head">
+            <li class="item active"><a href="index-full.html">Главная</a></li>
+            <li class="item"><a href="lavka.html">Лавка</a></li>
+            <li class="item"><a href="statistics.html">Статистика</a></li>
+            <li class="item"><a href="actions.html">Акции</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="sidebar-main">
+          <ul class="single-ul">
+            <li class="item"><a href="fantasy.html"><span>Фэнтези</span></a></li>
+            <li class="item"><a href="index-full.html"><span>Букмекер</span></a></li>
+          </ul>
+
+          <div class="tabs-wrap">
+            <ul class="nav tabs-ul" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">Все</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="cyber-tab" data-toggle="tab" href="#cyber" role="tab" aria-controls="cyber" aria-selected="false">Кибер</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="sport-tab" data-toggle="tab" href="#sport" role="tab" aria-controls="sport" aria-selected="false">Спорт</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <ul class="list-games">
+                  <li class="g-item">Все</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade show active" id="cyber" role="tabpanel" aria-labelledby="cyber-tab">
+                <ul class="list-games">
+                  <li class="g-item active">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/dota.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">Dota 2</span>
+                    </a>
+                  </li>
+                  <li class="g-item">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/cs-go.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">CS:GO</span>
+                    </a>
+                  </li>
+                  <li class="g-item">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/valo.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">Valorant</span>
+                    </a>
+                  </li>
+                  <li class="g-item active">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/lol.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">LOL</span>
+                    </a>
+                  </li>
+                  <li class="g-item">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/starcraft.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">StarCraft</span>
+                    </a>
+                  </li>
+                  <li class="g-item active">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/warcraft.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">WarCraft</span>
+                    </a>
+                  </li>
+                  <li class="g-item">
+                    <a href="" class="link">
+                      <div class="img-div">
+                        <img src="img/games/rb6.svg" alt="" class="g-logo">
+                      </div>
+                      <span class="g-name">RB6</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="sport" role="tabpanel" aria-labelledby="sport-tab">
+                <ul class="list-games">
+                  <li class="g-item">Спорт</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-main">
+          <div class="banners-wrapper">
+  
+          </div>
+
+          <div class="match-main">
+            <ul class="filter-match">
+              <li class="item"><a href="index-full.html">В топе</a></li>
+              <li class="item active"><a href="index-full.html">Прематч</a></li>
+              <li class="item live"><a href="match.html">Лайв</a></li>
+              <li class="item"><a href="long-term.html">Долгосрочные</a></li>
+              <li class="item"><a href="long-term.html">Результаты</a></li>
+              <li class="item"><a href="long-term.html">Расписание</a></li>
+            </ul>
+
+            <div class="tournaments">
+              <a class="more-btn ">еще</a>
+              <ul class="list start">
+                <li class="li">
+                  <a class="link" href="javascript:void(0);">
+                    <div class="logo">
+                      <img class="img" src="img/tour/tour-1.png" alt="">
+                    </div>
+                    <span>ESL ANZ Champs <br> Season 12</span>
+                  </a>
+                </li>
+                <li class="li">
+                  <a class="link" href="javascript:void(0);">
+                    <div class="logo">
+                      <img class="img" src="img/tour/tour-2.png" alt="">
+                    </div>
+                    <span>EPIC League <br> Season 2</span>
+                  </a>
+                </li>
+                <li class="li">
+                  <a class="link" href="javascript:void(0);">
+                    <div class="logo">
+                      <img class="img" src="img/tour/tour-3.png" alt="">
+                    </div>
+                    <span>PGL Major <br> Stockholm 2021</span>
+                  </a>
+                </li>
+                <li class="li active">
+                  <a class="link" href="javascript:void(0);">
+                    <div class="logo">
+                      <img class="img" src="img/tour/tour-4.png" alt="">
+                    </div>
+                    <span>The <br> International 2021</span>
+                  </a>
+                </li>
+                <li class="li">
+                  <a class="link" href="javascript:void(0);">
+                    <div class="logo">
+                      <img class="img" src="img/tour/tour-5.png" alt="">
+                    </div>
+                    <span>Moon Studio <br> Kagura Championship</span>
+                  </a>
+                </li>
+
+            
+                  <li class="li">
+                    <a class="link" href="javascript:void(0);">
+                      <div class="logo">
+                        <img class="img" src="img/tour/tour-1.png" alt="">
+                      </div>
+                      <span>ESL ANZ Champs <br> Season 12</span>
+                    </a>
+                  </li>
+                  <li class="li">
+                    <a class="link" href="javascript:void(0);">
+                      <div class="logo">
+                        <img class="img" src="img/tour/tour-2.png" alt="">
+                      </div>
+                      <span>EPIC League <br> Season 2</span>
+                    </a>
+                  </li>
+                  <li class="li">
+                    <a class="link" href="javascript:void(0);">
+                      <div class="logo">
+                        <img class="img" src="img/tour/tour-3.png" alt="">
+                      </div>
+                      <span>PGL Major <br> Stockholm 2021</span>
+                    </a>
+                  </li>
+                  <li class="li">
+                    <a class="link" href="javascript:void(0);">
+                      <div class="logo">
+                        <img class="img" src="img/tour/tour-4.png" alt="">
+                      </div>
+                      <span>The <br> International 2021</span>
+                    </a>
+                  </li>
+                  <li class="li">
+                    <a class="link" href="javascript:void(0);">
+                      <div class="logo">
+                        <img class="img" src="img/tour/tour-5.png" alt="">
+                      </div>
+                      <span>Moon Studio <br> Kagura Championship</span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="match-list">
+              <ul class="list">
+                <li class="match live">
+                  <div class="left">
+                    <div class="time">
+                      <span class="day">LIVE</span>
+                      <span class="hour">[1:1]</span>
+                    </div>
+                    <div class="game">
+                      <img class="logo" src="img/games/dota.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="l-team win">
+                      <div class="name">NAVI</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ua.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/navi.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.87</div>
+                    </div>
+                    <div class="r-team lose">
+                      <div class="name">Virtus Pro</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ru.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/virtus.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.77</div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="arrow-up">
+                      <a href="javascript:void(0);" class="link"></a>
+                    </div>
+                    <div class="activ">
+                      <a href="" class="link"></a>
+                    </div>
+                    <div class="tour">
+                      <img src="img/tour/tour-5.png" alt="">
+                    </div>
+                    <div class="screen">
+                      <a href="" class="link"></a>
+                    </div>
+                  </div>
+
+                  <div class="details-match">
+                    <div class="head-filter">
+                      <ul class="left-f">
+                        <li class="item"><a href="">Все</a></li>
+                        <li class="item active"><a href="">Матч</a></li>
+                        <li class="item"><a href="">Карта 1</a></li>
+                        <li class="item"><a href="">Карта 2</a></li>
+                        <li class="item"><a href="">Карта 3</a></li>
+                      </ul>
+                      <ul class="right-f">
+                        <li class="item"><a href="">Все</a></li>
+                        <li class="item active"><a href="">Тотал</a></li>
+                        <li class="item"><a href="">Фора</a></li>
+                        <li class="item"><a href="">Другое</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="body-details">
+                      <ul class="list">
+                        <li class="item">
+                          <span class="text"> Рошанов больше 10! </span>
+                          <div class="coefs-item">
+                            <div class="l-coef">2</div>
+                            <div class="r-coef">3</div>
+                          </div>
+                          <div></div>
+                        </li>
+                        <li class="item">
+                          <span class="text">Точный счет в матче 2-1</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">4</div>
+                            <div class="r-coef">5</div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <span class="text">Navi + 1.5</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">2</div>
+                            <div class="r-coef">3</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="match">
+                  <div class="left">
+                    <div class="time">
+                      <span class="day">05.01</span>
+                      <span class="hour">19:00</span>
+                    </div>
+                    <div class="game">
+                      <img class="logo" src="img/games/rb6.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="l-team">
+                      <div class="name">Fnatic</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/en.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/fnatic.png" alt=""></div>
+                      </div>
+                      <div class="coef active">1.87</div>
+                    </div>
+                    <div class="r-team">
+                      <div class="name">Evil Geniuses</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ua.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/secret.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.77</div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="arrow-up">
+                      <a href="javascript:void(0);" class="link"></a>
+                    </div>
+                    <div class="activ">
+                      <a href="" class="link"></a>
+                    </div>
+                    <div class="tour">
+                      <img src="img/tour/tour-5.png" alt="">
+                    </div>
+                    <div class="screen">
+                      <a href="" class="link"></a>
+                    </div>
+                  </div>
+
+                  <div class="details-match">
+                    <div class="head-filter">
+                      <ul class="left-f">
+                        <li class="item"><a href="">Все</a></li>
+                        <li class="item active"><a href="">Матч</a></li>
+                        <li class="item"><a href="">Карта 1</a></li>
+                        <li class="item"><a href="">Карта 2</a></li>
+                        <li class="item"><a href="">Карта 3</a></li>
+                      </ul>
+                      <ul class="right-f">
+                        <li class="item"><a href="">Все</a></li>
+                        <li class="item active"><a href="">Тотал</a></li>
+                        <li class="item"><a href="">Фора</a></li>
+                        <li class="item"><a href="">Другое</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="body-details">
+                      <ul class="list">
+                        <li class="item">
+                          <span class="text">Рошанов больше 10!</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">2</div>
+                            <div class="r-coef">3</div>
+                          </div>
+                          <div></div>
+                        </li>
+                        <li class="item">
+                          <span class="text">Точный счет в матче 2-1</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">4</div>
+                            <div class="r-coef">5</div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <span class="text">Navi + 1.5</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">2</div>
+                            <div class="r-coef">3</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="match">
+                  <div class="left">
+                    <div class="time">
+                      <span class="day">05.01</span>
+                      <span class="hour">19:00</span>
+                    </div>
+                    <div class="game">
+                      <img class="logo" src="img/games/cs-go.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="l-team">
+                      <div class="name">Team Secret</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ru.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/secret.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.87</div>
+                    </div>
+                    <div class="r-team">
+                      <div class="name">Alliance</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ru.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/virtus.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.77</div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="arrow-up">
+                      <a href="javascript:void(0);" class="link"></a>
+                    </div>
+                    <div class="activ">
+                      <a href="" class="link"></a>
+                    </div>
+                    <div class="tour">
+                      <img src="img/tour/tour-5.png" alt="">
+                    </div>
+                    <div class="screen">
+                      <a href="" class="link"></a>
+                    </div>
+                  </div>
+
+                  <div class="details-match">
+                    <div class="head-filter">
+                      <ul class="left-f">
+                        <li class="item"><a href="">Все</a></li>
+                        <li class="item active"><a href="">Матч</a></li>
+                        <li class="item"><a href="">Карта 1</a></li>
+                        <li class="item"><a href="">Карта 2</a></li>
+                        <li class="item"><a href="">Карта 3</a></li>
+                      </ul>
+                      <ul class="right-f">
+                        <li class="item"><a href="">Все</a></li>
+                        <li class="item active"><a href="">Тотал</a></li>
+                        <li class="item"><a href="">Фора</a></li>
+                        <li class="item"><a href="">Другое</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="body-details">
+                      <ul class="list">
+                        <li class="item">
+                          <span class="text">Рошанов больше 10!</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">2</div>
+                            <div class="r-coef">3</div>
+                          </div>
+                          <div></div>
+                        </li>
+                        <li class="item">
+                          <span class="text">Точный счет в матче 2-1</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">4</div>
+                            <div class="r-coef">5</div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <span class="text">Navi + 1.5</span>
+                          <div class="coefs-item">
+                            <div class="l-coef">2</div>
+                            <div class="r-coef">3</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="match">
+                  <div class="left">
+                    <div class="time">
+                      <span class="day">05.01</span>
+                      <span class="hour">19:00</span>
+                    </div>
+                    <div class="game">
+                      <img class="logo" src="img/games/cs-go.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="l-team">
+                      <div class="name">Fnatic</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ua.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/navi.png" alt=""></div>
+                      </div>
+                      <div class="coef active">1.87</div>
+                    </div>
+                    <div class="r-team">
+                      <div class="name">Evil Geniuses</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ru.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/virtus.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.77</div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="arrow-up">
+                      <a href="javascript:void(0);" class="link"></a>
+                    </div>
+                    <div class="activ">
+                      <a href="" class="link"></a>
+                    </div>
+                    <div class="tour">
+                      <img src="img/tour/tour-5.png" alt="">
+                    </div>
+                    <div class="screen">
+                      <a href="" class="link"></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="match">
+                  <div class="left">
+                    <div class="time">
+                      <span class="day">05.01</span>
+                      <span class="hour">19:00</span>
+                    </div>
+                    <div class="game">
+                      <img class="logo" src="img/games/cs-go.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="l-team">
+                      <div class="name">Vici Gaming</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ua.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/navi.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.87</div>
+                    </div>
+                    <div class="r-team">
+                      <div class="name">Alliance</div>
+                      <div class="circles">
+                        <div class="country"><img class="img" src="img/flags/ru.svg" alt=""></div>
+                        <div class="logo"><img class="img" src="img/teams/virtus.png" alt=""></div>
+                      </div>
+                      <div class="coef">1.77</div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="arrow-up">
+                      <a href="javascript:void(0);" class="link"></a>
+                    </div>
+                    <div class="activ">
+                      <a href="" class="link"></a>
+                    </div>
+                    <div class="tour">
+                      <img src="img/tour/tour-5.png" alt="">
+                    </div>
+                    <div class="screen">
+                      <a href="" class="link"></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="account no-user">
+          <div class="login box-g">
+            <div class="head-btns">
+              <div class="reg active"><a href="javascript:void(0);">Регистрация</a></div>
+              <div class="log"><a href="javascript:void(0);">Вход</a></div>
+            </div>
+
+            <div class="form-login">
+              <ul class="socials">
+                <li class="txt">Зарегистрируйся в один клик:</li>
+                <li class="item"><a href=""><img class="icon" src="img/icons/vk.svg" alt=""></a></li>
+                <li class="item"><a href=""><img class="icon" src="img/icons/fb.svg" alt=""></a></li>
+                <li class="item"><a href=""><img class="icon" src="img/icons/tw.svg" alt=""></a></li>
+              </ul>
+              <form action="">
+                <input class="input mail" type="text" placeholder="Email">
+                <input class="input nick" type="text" placeholder="Nick-name">
+                <input class="submit" type="submit" value="ВРЫВАЮСЬ">
+                <div class="bottom-act">
+                  <div class="select">
+                    <label for="valuta">Валюта:</label>
+                    <select name="valuta" id="valuta">
+                      <option value="usd">usd</option>
+                      <option value="uah">uah</option>
+                      <option value="eur">eur</option>
+                    </select>
+                  </div>
+                  <label class="checkbox-adult">
+                    <input class="checkbox" type="checkbox">
+                    <span class="checkmark"></span>
+                    Мне есть 18 ©
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            <div class="progress-line">
+              <div class="p-name">
+                <span class="text">Прогресс уровня:</span>
+                <span class="proc">15/100%</span>
+              </div>
+              <div class="line-bar green">
+                <div class="bar" style="width: 15%"></div>
+              </div>
+            </div>
+
+            <div class="progress-line">
+              <div class="p-name">
+                <span class="text">Прогресс достижений:</span>
+                <span class="proc">15/100%</span>
+              </div>
+              <div class="line-bar orange">
+                <div class="bar" style="width: 15%"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="place-bet box-g">
+            <ul class="filter-match">
+              <li class="item active"><a href="">Купон</a></li>
+              <li class="item"><a href="">Топ предложения</a></li>
+              <li class="item"><a href="">Акции</a></li>
+            </ul>
+            
+            <div class="tabs-wrap">
+              <ul class="nav tabs-ul" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="single-tab" data-toggle="tab" href="#single" role="tab" aria-controls="single" aria-selected="true">Одинарные</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="express-tab" data-toggle="tab" href="#express" role="tab" aria-controls="express" aria-selected="false">Экспресс</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link disabled" id="system-tab" data-toggle="tab" href="#system" role="tab" aria-controls="system" aria-selected="false">Система</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="single" role="tabpanel" aria-labelledby="single-tab">
+                  
+                </div>
+                <div class="tab-pane fade" id="express" role="tabpanel" aria-labelledby="express-tab">
+                  
+                </div>
+                <div class="tab-pane fade" id="system" role="tabpanel" aria-labelledby="system-tab">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+</body>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

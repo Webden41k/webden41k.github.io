@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <title>Standart</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick-lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+<!-- Modal -->
+<div class="modal fade modalMain" tabindex="-1" role="dialog" aria-labelledby="modalMain" aria-hidden="true" id="modalMain">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="title">Персональная скидка в будние дни</p>
+        <form action="sendZ.php" method="get">
+          <div class="select">
+            <select name="type" id="">
+              <option value="Standart">Standart</option>
+              <option value="Premium">Premium</option>
+              <option value="Luxury">Luxury</option>
+            </select>
+          </div>
+          <div class="clearfix">
+            <div class="input input1"><input type="text" placeholder="Введите имя" name="name"></div>
+            <div class="input input2"><input type="text" placeholder="Введите телефон" name="phone"></div>
+          </div>
+          <input class="btnForm" value="Рассчитать стоимость" type="submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade modalMain" tabindex="-1" role="dialog" aria-labelledby="modalMain1" aria-hidden="true" id="modalMain1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="title">Заказать обратный звонок</p>
+        <form action="send.php" method="get">
+          <div class="clearfix">
+            <div class="input input1"><input type="text" placeholder="Введите имя" name="name"></div>
+            <div class="input input2"><input type="text" placeholder="Введите телефон" name="phone"></div>
+          </div>
+          <input class="btnForm" value="Отправить" type="submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-xs-12 pr0">
+          <a href="http://svadba-v-sosnax.ru" class="logo"><img src="img/logo.png" alt=""></a>
+          <div class="info">
+            <p>Калужская обл. с. Корекозево, д.230Б</p>
+            <p><a href="tel:8(920)6180195">8 (920) 618 01 95</a></p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-9 col-xs-12 clearfix">
+          <ul class="menuHeader clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html">Галерея</a></li>
+            <li><a href="index.html">Отзывы</a></li>
+            <li><a href="index.html">Свадьба под ключ</a></li>
+            <li class="btnHeader modalBtn"><a href="#modalMain" data-toggle="modal" data-target="#modalMain1">заказать звонок</a></li>              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="section-page">
+    <div class="container">
+      <h1>Standart</h1>
+      <p class="dec">В этом пакете собраны 8 основных позиций, без которых красивая свадьба не может состояться. <br>
+Пакет рассчитан на 30 приглашенных гостей. </p>
+      <img src="img/standart-img.png" alt="">
+      
+      <div class="info">
+        <p>В свадебный пакет "Standart" входит:<a href="#modalMain" data-toggle="modal" data-target="#modalMain1" class="btnP">Подробнее</a></p>
+        
+        <img class="hidden-sm hidden-xs" src="img/standart.png" alt="">
+        
+        <ul class="hidden-lg hidden-md">
+          <li><img src="img/icon1.png" alt="">Фотосъемка церемонии брака и прогулки.</li>
+          <li><img src="img/icon2.png" alt="">Видеосъемка церемонии брака.</li>
+          <li><img src="img/icon3.png" alt="">Свадебный банкет на
+30 человек. </li>
+          <li><img src="img/icon4.png" alt="">Декор президиума молодоженов. </li>
+          <li><img src="img/icon5.png" alt="">Свадебная
+флористика</li>
+          <li><img src="img/icon6.png" alt="">Ведущий + DJ</li>
+          <li><img src="img/icon7.png" alt="">Свадебный торт на 3 кг
++ каравай. </li>
+          <li><img src="img/icon8.png" alt="">Автомобиль для молодоженов с оформлением </li>
+        </ul>
+        
+        <a href="#modalMain" data-toggle="modal" data-target="#modalMain" class="btnB">Заказать подробный расчет</a>
+      </div>
+    </div>
+  </section>
+   
+    
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>  
+<script src="js/slick.min.js"></script>  
+<script src="js/slick-lightbox.min.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>

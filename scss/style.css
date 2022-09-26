@@ -1,0 +1,572 @@
+@font-face {
+  font-family: 'Saira';
+  src: url("/fonts/saira/Saira-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Saira-Bold';
+  src: url("/fonts/saira/Saira-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Saira-Light';
+  src: url("/fonts/saira/Saira-Light.ttf"); }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("/fonts/poppins/Poppins-Bold.ttf"); }
+
+/* line 40, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+::-moz-selection {
+  background: #ff3d4f; }
+
+/* line 44, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+::selection {
+  background: #ff3d4f; }
+
+/* line 48, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+img::-moz-selection {
+  background: transparent; }
+
+/* line 52, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+img::selection {
+  background: transparent; }
+
+@-webkit-keyframes vertical {
+  0%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0); }
+  20% {
+    -webkit-transform: translateY(-5px); }
+  40% {
+    -webkit-transform: translateY(20px); } }
+
+@keyframes vertical {
+  0%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0); }
+  20% {
+    -webkit-transform: translateY(-5px); }
+  40% {
+    -webkit-transform: translateY(20px); } }
+
+/* line 92, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+p {
+  margin: 0;
+  padding: 0; }
+
+/* line 97, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+h2 {
+  font-size: 48px;
+  font-family: 'Saira-Bold';
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0px 0px 80px 0px;
+  position: relative; }
+
+/* line 109, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+body {
+  background: #191a1c;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Saira'; }
+
+/* line 119, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.orange {
+  color: #ff3d4f; }
+
+/* line 123, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  display: flex; }
+
+/* line 130, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.contact-me {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 16px;
+  letter-spacing: 0.1em; }
+  /* line 141, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .contact-me li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 8px; }
+    /* line 146, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .contact-me li i {
+      font-size: 20px;
+      color: #ffffff; }
+    /* line 151, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .contact-me li a:hover i {
+      color: #ff3d4f;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
+  /* line 158, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .contact-me .li-90 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(-90deg);
+    margin-top: 115px; }
+    /* line 163, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .contact-me .li-90:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background: #9da1a5;
+      top: 50%;
+      margin-top: -2px;
+      right: -67px; }
+
+/* line 180, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+header {
+  background: #1d1e20;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  /* line 190, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  header .wrap {
+    justify-content: space-between;
+    align-items: center; }
+  /* line 195, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.05em; }
+  /* line 203, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  header .nav-btn {
+    padding: 5px;
+    cursor: pointer; }
+    /* line 207, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .nav-btn .bar-1,
+    header .nav-btn .bar-2,
+    header .nav-btn .bar-3 {
+      display: block;
+      width: 22px;
+      height: 3px;
+      background: #9da1a5;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      margin-left: 5px; }
+    /* line 219, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .nav-btn .bar-2 {
+      margin: 6px 0; }
+    /* line 225, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .nav-btn:hover .bar-1,
+    header .nav-btn:hover .bar-2,
+    header .nav-btn:hover .bar-3 {
+      background: #ff3d4f;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      margin-left: 0; }
+    /* line 236, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .nav-btn.open .bar-2 {
+      display: none; }
+    /* line 240, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .nav-btn.open .bar-1 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 2px;
+      width: 24px;
+      background: #ff3d4f;
+      margin-left: 0; }
+    /* line 248, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .nav-btn.open .bar-3 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -1px;
+      width: 24px;
+      background: #ff3d4f;
+      margin-left: 0; }
+  /* line 259, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  header .navs {
+    display: none;
+    margin-right: 20px;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0; }
+    /* line 266, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .navs.open {
+      display: flex; }
+    /* line 270, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    header .navs li {
+      list-style: none;
+      margin-left: 20px; }
+      /* line 274, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      header .navs li:first-child {
+        margin-left: 0; }
+      /* line 277, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      header .navs li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }
+        /* line 284, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+        header .navs li a:hover {
+          color: #ff3d4f;
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+  /* line 293, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  header .myname {
+    font-size: 26px;
+    line-height: 26px;
+    color: #ffffff;
+    text-decoration: none; }
+  /* line 300, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  header .myprof {
+    font-family: "Saira-Light";
+    color: #9da1a5;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.05em; }
+
+/* line 309, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.first-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  /* line 316, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .wrap {
+    z-index: 2;
+    flex-wrap: wrap; }
+  /* line 321, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .fullname {
+    font-size: 20px;
+    color: #9da1a5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px; }
+    /* line 330, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .fullname:before {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 3px;
+      background: #ff3d4f;
+      margin-right: 10px; }
+  /* line 340, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .typed-cursor {
+    font-size: 60px;
+    padding-left: 10px;
+    padding-top: 28px;
+    color: #ffffff; }
+    /* line 346, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .typed-cursor.typed-cursor--blink {
+      -webkit-animation: typedjsBlink 1.2s infinite;
+      animation: typedjsBlink 1.2s infinite; }
+  /* line 352, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .profession {
+    display: block;
+    font-size: 90px;
+    margin: 0;
+    font-family: "Saira-Bold";
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px; }
+  /* line 363, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .adress {
+    width: 100%;
+    border-left: 3px solid #ff3d4f;
+    padding-left: 20px;
+    font-family: 'Saira-Light';
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px; }
+    /* line 374, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .adress .state {
+      display: block;
+      color: #9da1a5;
+      font-size: 18px;
+      line-height: 20px;
+      font-family: 'Saira-Bold';
+      letter-spacing: 0.05em;
+      margin-bottom: 10px; }
+  /* line 385, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .bg-image {
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    /* line 392, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .bg-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+      z-index: 1; }
+  /* line 401, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .first-section .scrolling {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    width: 28px;
+    height: 120px;
+    z-index: 1; }
+    /* line 409, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .scrolling .mouse {
+      position: absolute;
+      height: 38px;
+      width: 22px;
+      border: 3px solid #ffffff;
+      border-radius: 13px;
+      left: 0px;
+      top: 22px;
+      -webkit-animation: vertical 3s ease infinite;
+      animation: vertical 3s ease infinite; }
+      /* line 420, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .first-section .scrolling .mouse:before {
+        content: "";
+        display: block;
+        height: 8px;
+        width: 4px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 2px; }
+    /* line 435, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .scrolling:before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 0px;
+      border-right: 1px dashed #9da1a5;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    /* line 448, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .first-section .scrolling:after {
+      content: "";
+      display: block;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+
+/* line 465, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.section-me {
+  display: flex;
+  justify-content: center;
+  background: no-repeat top -60px center url(/img/bg-paterns.png) #131314;
+  background-size: 100% auto;
+  padding: 80px 0; }
+  /* line 472, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-me .wrap {
+    align-items: center;
+    flex-direction: column; }
+  /* line 477, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-me .me-img {
+    width: 500px;
+    height: 500px;
+    background: no-repeat url(/img/circle.gif);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; }
+    /* line 487, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .section-me .me-img .img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      border-radius: 50%;
+      border: 5px solid #1F2235; }
+  /* line 496, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-me .txt-me {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: #ffffff; }
+    /* line 502, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .section-me .txt-me .name {
+      font-family: 'Poppins-Bold';
+      font-size: 60px; }
+
+/* line 510, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.section-skills {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0; }
+  /* line 515, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-skills .wrap {
+    flex-direction: column; }
+  /* line 519, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-skills .skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-left: 0; }
+    /* line 526, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .section-skills .skill-list li {
+      list-style: none;
+      width: 25%;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 50px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      /* line 535, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-skills .skill-list li img {
+        height: 100px; }
+      /* line 539, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-skills .skill-list li:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+
+/* line 550, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+.section-portfolio {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background: #131314; }
+  /* line 556, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-portfolio .wrap {
+    flex-direction: column; }
+  /* line 560, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  .section-portfolio .work-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.66%; }
+    /* line 567, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+    .section-portfolio .work-list .work {
+      width: 23%;
+      height: 320px;
+      background: #23263a;
+      position: relative;
+      margin-bottom: 1.33%;
+      background-size: 100% 100%; }
+      /* line 576, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.era {
+        background-image: url(/img/era-bg.jpg); }
+      /* line 579, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.yeezy {
+        background-image: url(/img/yeezy-bg.jpg); }
+      /* line 582, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.hp {
+        background-image: url(/img/hp-bg.jpg); }
+      /* line 585, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.gamescore {
+        background-image: url(/img/gamescore.jpg); }
+      /* line 588, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.svadba {
+        background-image: url(/img/svadba.jpg); }
+      /* line 591, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.kingdom {
+        background-image: url(/img/kingdom.jpg); }
+      /* line 594, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.plitka {
+        background-image: url(/img/plitka.jpg); }
+      /* line 597, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work.block {
+        background-image: url(/img/block.jpg); }
+      /* line 602, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work a {
+        font-size: 24px;
+        font-family: 'Saira-Bold';
+        letter-spacing: 0.03em;
+        line-height: 34px;
+        color: #ffffff;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+        position: relative;
+        z-index: 2;
+        text-shadow: 0px 0px 10px black; }
+        /* line 618, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+        .section-portfolio .work-list .work a span {
+          padding: 10px;
+          width: 100%; }
+      /* line 625, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work:before {
+        display: block;
+        position: absolute;
+        content: "";
+        border: 1px solid transparent;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 1; }
+      /* line 638, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 1px solid transparent;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+        z-index: 1; }
+      /* line 656, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work:hover:before {
+        width: 100%;
+        height: 100%;
+        border-top-color: #ff3d4f;
+        border-right-color: #ff3d4f;
+        transition: width 0.15s ease-out, height 0.15s ease-out 0.15s; }
+      /* line 664, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+      .section-portfolio .work-list .work:hover:after {
+        width: 100%;
+        height: 100%;
+        border-bottom-color: #ff3d4f;
+        border-left-color: #ff3d4f;
+        transition: width 0.15s ease-out, height 0.15s ease-out 0.15s; }
+
+/* line 678, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  /* line 683, /Users/webden41k/Desktop/webden41k/scss/style.scss */
+  footer p {
+    text-align: center;
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

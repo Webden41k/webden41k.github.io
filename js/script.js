@@ -1,9 +1,3 @@
-$('.loader').awesomeCursor('hand', {
-  color: '#fff',
-  size: 22,
-  hotspot: 'left top'
-});
-
 $('.loader').click(function() {
   $(".loader-text").addClass("anim");
   $(".loader-text .name").addClass("animate__fadeOutLeft");

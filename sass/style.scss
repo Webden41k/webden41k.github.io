@@ -42,6 +42,7 @@ body{
   height: 100%;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   
   .loader-text{
     font-family: 'Saira-Thin';
@@ -71,7 +72,7 @@ body{
 
 
 section{
-  background: #000;
+  background: #111;
   width: 100%;
   height: 100%;
 }

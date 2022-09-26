@@ -1,25 +1,12 @@
-$(function(){
+$('.loader').awesomeCursor('hand', {
+  color: '#fff',
+  size: 22,
+  hotspot: 'left top'
+});
 
-  $('body').circursor({
-
-    // size of cursor 1
-    size1: "0",
-
-    // size of cursor 2
-    size2: "30px",
-
-    // width of circle cursor
-    width: "10px",
-
-    // color of circle cursor
-    color: "white",
-
-    // duration of animation
-    duration: "200",
-
-    // easing effect
-    easing: "easeOutQuint"
-
-  });
-
+$('.loader').click(function() {
+  $(".loader-text").addClass("anim");
+  $(".loader-text .name").addClass("animate__fadeOutLeft");
+  $(".loader-text .spec").addClass("animate__fadeOutRight");
+  $('.loader').delay(700).fadeOut(500);
 });

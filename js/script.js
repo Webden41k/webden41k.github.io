@@ -2,5 +2,8 @@ $('.loader').on( 'click' , function() {
   $(".loader-text").addClass("anim");
   $(".loader-text .name").addClass("animate__fadeOutLeft");
   $(".loader-text .spec").addClass("animate__fadeOutRight");
-  $('.loader').delay(700).fadeOut(500);
+  $(this).delay(700).fadeOut(500);
+  setTimeout(function(){
+    $('.loader').remove();
+  }, 1200); 
 });

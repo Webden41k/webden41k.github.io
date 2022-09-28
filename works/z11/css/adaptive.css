@@ -1,0 +1,639 @@
+
+@media only screen and (max-width: 1279px) {
+  .container.hf ,
+  .container.cont-res ,
+  .container.cont-match ,
+  .container {
+      max-width: 980px;
+  }
+  
+  header .nav{
+    margin-left: 0;
+  }
+  
+  header .nav .nav-item{
+    margin-right: 15px;
+  }
+  
+  header .header-search{
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  footer .mails{
+    margin-right: 20px;
+  }
+  
+  footer .powered{
+    margin-right: 30px;
+  }
+  
+  .cont-match .dm-header .shilds-team{
+    position: absolute;
+    top: -22px;
+    width: 100%;
+  }
+  
+  .cont-match .details-match .dm-info .graphic{
+    width: 100%;
+    order: 1;
+    flex: 1 0 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .cont-match .details-match .dm-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .cont-match .details-match .dm-info .list-pl{
+    width: 50%;
+    order: 2;
+  }
+  
+  .cont-match .details-match .dm-info .graphic .img{
+    margin-top: 0;
+  }
+  
+  main .team-tours .tour{
+    padding: 15px 20px;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .container.hf ,
+  .container.cont-res ,
+  .container.cont-match ,
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  header .nav{
+    justify-content: flex-start;
+  }
+  
+  header .nav .nav-item{
+    margin-left: 3.33%;
+    margin-right: 0;
+  }
+  
+  header .header-search .form-group{
+    display: none;
+    position: absolute;
+    width: 180px;
+    right: 30px;
+    top: -2px;
+    border: 1px solid #494949;
+    border-radius: 20px;
+    background: #1B1B1E;
+    padding: 0 10px;
+    z-index: 100;
+  }
+  
+  header .header-search{
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  header .header-search .search-btn{
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: url(../img/icons/search.svg);
+    background-position: left 5px top 5px;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    cursor: pointer;
+  }
+    
+
+  header .header-search.active .form-group{
+    display: flex;
+  }
+  header .header-search.active .search-btn{
+    background: url(../img/icons/close-icon.svg);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: left 5px top 5px;
+  }
+  
+  footer .contacts{
+    flex-direction: column;
+  }
+  
+  footer .mails, footer .devs{
+    width: 100%;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+  
+  footer .devs{
+    margin-bottom: 0;
+  }
+  
+  .footer-row{
+    align-items: center;
+  }
+  
+  footer .f-info{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .powered {
+    margin-right: 0;
+  }
+  
+  footer .nav .nav-item{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer .nav .nav-link{
+    line-height: 25px;
+  }
+  
+
+  .cont-match .main-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .cont-match .main-row .main-col{
+    order: 2;
+  }
+  
+  .cont-match .main-row .main-col.col-match{
+    order: 1;
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+  }
+  
+  main .list-match.mob-scroll{
+    max-height: 480px;
+    overflow: scroll;
+    margin-bottom: 10px;
+  }
+  
+  main .hide-mob{
+    display: none;
+  }
+
+  main .teams-list .team-item.active .item-details,
+  main .players-list .player-item.active .item-details{
+    display: flex;
+  }
+  
+  main .tour-list .tour-item.active .item-details{
+    display: block;
+    padding-top: 3px;
+  }
+
+  main .teams-list .team-item .item-details .team-name{
+    width: auto; 
+  }
+  
+  main .teams-list .team-item .item-details,
+  main .players-list .player-item .item-details{
+    margin: 0 -3px;  
+  }
+  
+  main .teams-list .team-item .item-details .col,
+  main .players-list .player-item .item-details .col{
+    padding: 0 3px;
+  }
+  
+  .item-details{
+    max-height: 340px;
+    overflow: scroll;
+    margin-bottom: 10px;
+  }
+  
+  main .item-details .list-match{
+    max-height: 100%;
+    margin-bottom: 0;
+  }
+  
+  footer{
+    min-height: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  header .nav{
+    position: absolute;
+    width: 200px;
+    background: #1B1B1E;
+    right: 1px;
+    top: 60px;
+    z-index: 100;
+    border: 1px solid #414141;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: none;
+  }
+  
+  header .header-search{
+    margin-left: 0;
+  }
+  
+  header .nav.active{
+    display: block;
+  }
+  
+  header .nav .nav-item{
+    width: 100%;
+  }
+  
+  header .nav .nav-item{
+    margin-left: 0;
+  }
+  
+  .col-nav{
+    position: static;
+  }
+  
+  .nav-show-btn{
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    transition: 0.4s;
+    display: block;
+  }
+  
+  .bar1{
+    margin-top: 3px;
+  }
+
+
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
+      transform: rotate(-45deg) translate(-6px, 5px) ;
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+      transform: rotate(45deg) translate(-6px, -6px) ;
+    }
+  
+  .header-row{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+  }
+  
+  .header-row div{
+    width: auto;
+    padding: 0;
+  }
+  
+  .header-row .logo{
+    margin-right: auto;
+    padding: 0;
+  }
+  
+  header .lang-H .current-lang{
+    margin-left: 10px;
+  }
+  
+  header .lang-H .drop-menu{
+    left: 10px;
+  }
+  
+  .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  footer .f-info{
+    max-width: 100%;
+    order: 1;
+    flex: 0 1  100%;
+  }
+  
+  footer{
+    min-height: auto;
+    padding: 15px 0 10px 0;
+  }
+
+  .footer-row .logo{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  footer .mails, footer .devs{
+    width: auto;
+  }
+  
+  footer .contacts{
+    align-items: center;
+    padding: 12px 0 5px 0;
+  }
+  
+  .cont-match .main-row .main-col{
+    order: 3;
+  }
+  
+  .cont-match .main-row .main-col.col-dmatch{
+    order: 2;
+    margin-bottom: 20px;
+  }
+  
+  .container.cont-match{
+    padding: 0 10px;
+  }
+  
+  main .result-title{
+    min-height: 50px;
+    line-height: 48px;
+  }
+  
+  main .result-title .txt{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  
+  .header-row{
+    padding: 0 10px;
+  }
+  
+  main .main-col{
+    margin-bottom: 10px;
+  }
+  
+  main .details-match .dm-info .graphic{
+    display: none;
+  }
+  
+  main .details-match .dm-info .list-pl{
+    width: 50%;
+  }
+  
+  main .details-match .dm-header .shilds-team{
+    position: absolute;
+    top: -24px;
+    width: 100%;
+  }
+  
+  main .details-match .dm-header .score .plus{
+    bottom: -15px;
+  }
+  
+  main .details-match .dm-header{
+    margin-bottom: 10px;
+  }
+  
+  main .details-match{
+    padding: 25px 10px 5px 10px;
+  }
+  
+  main .details-match .dm-info{
+    padding: 10px 10px 0 10px;
+  }
+  
+  .container,
+  .container.cont-res{
+    padding: 0 10px;
+  }
+  
+  .nav-show-btn{
+    margin-left: 15px;
+  }
+  
+  main .list-match .match .score-data .shield-div.r{
+    right: -25px;
+  }
+  
+  main .list-match .match .score-data .shield-div.l{
+    left: -25px;
+  }
+  
+  main .teams-list .team-players{
+    overflow: scroll;
+    width: 47%;
+  }
+  
+  main .teams-list .team-players .player{
+    min-width: 50px;
+  }
+  
+  main .teams-list .team{
+    padding: 10px 10px 9px 10px;
+  }
+  
+  main .teams-list .team.active{
+    padding: 9px 10px 8px 10px;
+  }
+  
+  main .teams-list .team-country{
+    display: none;
+  }
+  
+  main .teams-list .team-logo{
+    width: 17%;
+  }
+  
+  main .teams-list .team-name{
+    width: 18%;
+  }
+  
+  main .teams-list .team-winrate{
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  main .teams-list .team-name{
+    font-size: 13px;
+  }
+  
+  main .team-tours .tour{
+    padding: 2px;
+  }
+  
+  main .team-tours .tour{
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  main .team-tours .tour-img{
+    width: 90%;
+    max-height: 40px;
+    margin-bottom: 4px;
+  }
+  
+  main .team-tours .tour-img .img{
+    max-height: 40px;
+  }
+  
+  main .team-tours .tour-date{
+    width: 100%;
+    text-align: center;
+    line-height: 11px;
+  }
+  
+  main .team-tours .tour-date .day,
+  main .team-tours .tour-date .time{
+    display: inline;
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+  
+  main .main-col {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  
+  main .player-stat .stat{
+    padding: 5px 3px;
+  }
+  
+  main .player-stat .stat-img{
+    width: 36px;
+    height: 36px;
+  }
+  
+  main .player-stat .stat-kda{
+    font-size: 11px;
+  }
+  
+  main .players-list .player-country{
+    display: none;
+  }
+  
+  main .players-list .player-heroes{
+    width: 43%;
+    margin-right: 4%;
+  }
+  
+  main .players-list .player-name{
+    width: 22%;
+  }
+  
+  main .players-list .player{
+    padding: 10px 10px 9px 10px;
+  }
+  
+  main .players-list .player.active{
+    padding: 9px 10px 8px 10px;
+  }
+  
+  main .players-list .player-img{
+    width: 18%;
+  }
+  
+  main .players-list .player-team{
+    width: 11%;
+  }
+  
+  main .players-list .player-name{
+    font-size: 13px;
+  }
+  
+  main .players-list .player-img .player-rate{
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    right: 0;
+  }
+  
+  main .list-match .match .score-data .data{
+    font-size: 20px;
+  }
+  
+  main .tour-list .tour-date{
+    width: 35%;
+    line-height: 16px;
+    font-size: 12px;
+  }
+  
+  main .tour-list .tour-logo{
+    width: 20%;
+  }
+  
+  main .tour-list .tour{
+    padding: 10px;
+  }
+  
+  main .tour-list .active .tour{
+    padding: 9px;
+  }
+  
+  main .content-tour .list-match{
+    width: 100%;
+  }
+  
+  main .tour-list .tour-name{
+    width: 26%;
+    font-size: 12px;
+  }
+  
+  main .main-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  main .main-row .c-m1{
+    order: 1;
+    margin-bottom: 0;
+  }
+  main .main-row .c-m2{
+    order: 2;
+  }
+  main .main-row .c-m3{
+    order: 3;
+  }
+  
+  main .main-grey-btn.mob {
+    display: block;
+  }
+  main .main-grey-btn.desk {
+    display: none;
+  }
+  
+  main .z-tabs .z-tab-link{
+    line-height: 34px;
+  }
+  
+  main .z-tabs .z-tab-link.active{
+    line-height: 32px;
+  }
+  
+  .btn-view-all{
+    margin-top: 10px;
+  }
+}
+
+
+

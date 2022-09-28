@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <title>Свадьба под ключ</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick-lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+<!-- Modal -->
+<div class="modal fade modalMain" tabindex="-1" role="dialog" aria-labelledby="modalMain" aria-hidden="true" id="modalMain">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="title">Персональная скидка в будние дни</p>
+        <form action="sendZ.php" method="get">
+          <div class="select">
+            <select name="type" id="">
+              <option value="Standart">Standart</option>
+              <option value="Premium">Premium</option>
+              <option value="Luxury">Luxury</option>
+            </select>
+          </div>
+          <div class="clearfix">
+            <div class="input input1"><input type="text" placeholder="Введите имя" name="name"></div>
+            <div class="input input2"><input type="text" placeholder="Введите телефон" name="phone"></div>
+          </div>
+          <input class="btnForm" value="Рассчитать стоимость" type="submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade modalMain" tabindex="-1" role="dialog" aria-labelledby="modalMain1" aria-hidden="true" id="modalMain1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="title">Заказать обратный звонок</p>
+        <form action="send.php" method="get">
+          <div class="clearfix">
+            <div class="input input1"><input type="text" placeholder="Введите имя" name="name"></div>
+            <div class="input input2"><input type="text" placeholder="Введите телефон" name="phone"></div>
+          </div>
+          <input class="btnForm" value="Отправить" type="submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-xs-12 pr0">
+          <a href="http://svadba-v-sosnax.ru" class="logo"><img src="img/logo.png" alt=""></a>
+          <div class="info">
+            <p>Калужская обл. с. Корекозево, д.230Б</p>
+            <p><a href="tel:8(920)6180195">8 (920) 618 01 95</a></p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-9 col-xs-12 clearfix">
+          <ul id="menu" class="menuHeader clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#ex1">Галерея</a></li>
+            <li><a href="#ex2">Отзывы</a></li>
+            <li><a href="#ex3">Свадьба под ключ</a></li>
+            <li class="btnHeader modalBtn"><a href="#modalMain" data-toggle="modal" data-target="#modalMain1">заказать звонок</a></li>              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="section1">
+    <div class="conrainer-fluid">
+      <h1>Свадьба Вашей Мечты! <span>в базе отдыха “сосны”</span></h1>
+    </div>
+  </section>
+   
+  <section class="section2" id="ex3">
+    <img class="ring" src="img/ring.png" alt="">
+    <div class="container">
+     <h1>ВАРИАНТЫ СВАДЕБ ПОД КЛЮЧ</h1>
+      <ul class="row variants">
+        <li class="col-md-4">
+         <a href="standart.html">
+          <img src="img/s2-img1.png" alt="">
+          <div class="textDiv">
+            <p class="title">Standart</p>
+            <p class="text">В этом пакете собраны 8 основных <br> позиций, без которых красивая <br> свадьба не может состояться.</p>
+            <div class="price">99 000 РУБ</div>
+            <span>Подробнее</span>
+          </div>
+          </a>
+        </li>
+        <li class="col-md-4">
+         <a href="premium.html">
+          <img src="img/s2-img2.png" alt="">
+          <div class="textDiv">
+            <p class="title">Premium</p>
+            <p class="text">В этом пакете собраны 9 основных <br> позиций, без которых красивая<br> свадьба  не может состояться.</p>
+            <div class="price">239 000 РУБ</div>
+            <span>Подробнее</span>
+          </div>
+          </a>
+        </li>
+        <li class="col-md-4">
+         <a href="luxury.html">
+          <img src="img/s2-img3.png" alt="">
+          <div class="textDiv">
+            <p class="title">Luxury</p>
+            <p class="text">В этом пакете собраны 12 основных <br> позиций, без которых красивая<br> свадьба не может состояться.</p>
+            <div class="price">299 000 РУБ</div>
+            <span>Подробнее</span>
+          </div>
+          </a>
+        </li>
+      </ul>
+      
+      <div class="saleDiv">
+        <p>скидка до <b>-50%</b> <span class="days">в будние дни</span></p>
+        <a href="#modalMain" data-toggle="modal" data-target="#modalMain" class="btn">Подробнее</a>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="section3" id="ex1">
+    <div class="container-fluid">
+     <ul class="photoSlider">
+       <li>
+         <a href="img/gallery/p1.jpg">
+           <img src="img/gallery/p1.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p2.jpg">
+           <img src="img/gallery/p2.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p3.jpg">
+           <img src="img/gallery/p3.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p4.jpg">
+           <img src="img/gallery/p4.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p5.jpg">
+           <img src="img/gallery/p5.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p6.jpg">
+           <img src="img/gallery/p6.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p7.jpg">
+           <img src="img/gallery/p7.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p8.jpg">
+           <img src="img/gallery/p8.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p9.jpg">
+           <img src="img/gallery/p9.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p10.jpg">
+           <img src="img/gallery/p10.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p11.jpg">
+           <img src="img/gallery/p11.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p12.jpg">
+           <img src="img/gallery/p12.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p13.jpg">
+           <img src="img/gallery/p13.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p14.jpg">
+           <img src="img/gallery/p14.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p15.jpg">
+           <img src="img/gallery/p15.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p16.jpg">
+           <img src="img/gallery/p16.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p17.jpg">
+           <img src="img/gallery/p17.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p18.jpg">
+           <img src="img/gallery/p18.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p19.jpg">
+           <img src="img/gallery/p19.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p20.jpg">
+           <img src="img/gallery/p20.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p21.jpg">
+           <img src="img/gallery/p21.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p22.jpg">
+           <img src="img/gallery/p22.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p23.jpg">
+           <img src="img/gallery/p23.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p24.jpg">
+           <img src="img/gallery/p24.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p25.jpg">
+           <img src="img/gallery/p25.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+       <li>
+         <a href="img/gallery/p26.jpg">
+           <img src="img/gallery/p26.jpg" />
+           <span>Андрей + Юлия</span>
+         </a>
+       </li>
+     </ul>
+    </div>
+  </section>
+  
+  
+  <section class="section4" id="ex2">
+    <div class="container">
+      <ul class="review">
+        <li class="clearfix">
+          <img src="img/rev2.png" alt="">
+          <div class="textDiv">
+            <p class="txt">Наша свадьба была 17.09.2016 на базе отдыха "Сосны", и я очень переживала как все пройдет. А прошло все замечательно! Банкет был в большом зале, рассчитанном на 120 человек. Для наших 48 гостей места было предостаточно, особенно для танцев. Никто из гостей голодным не ушёл, и абсолютно все остались довольны свадьбой! Территория вокруг банкетного зала тоже была красиво украшена фонарями, особенно мостик. У гостей и нас, молодоженов, остались красивые фотографии!)</p>
+            <p class="names">Кристина  <i>+</i>  Роман</p>
+          </div>
+          <li class="clearfix">
+            <img src="img/rev3.png" alt="">
+            <div class="textDiv">
+              <p class="txt">Хотела написать отзыв об этом чудесном месте! Наша свадьба была в августе на базе отдыха Сосны! Да, это по истине волшебное и экологическое место с множеством фотозон , вкусной кухней и приятным персоналом ! Администратор Вера помогла нам во всем! Именно по ее совету я заказывала вкусный торт со скидкой и услуги по оформлению банкетного зала и выездной регистрации! База отдыха Сосны это очень крутое место ! Не перестаю Вас рекомендовать своим друзьям и знакомым)))</p>
+              <p class="names">Ольга <i>+</i>  Сергей</p>
+            </div>
+          </li>
+          
+          <li class="clearfix">
+            <img src="img/rev4.png" alt="">
+            <div class="textDiv">
+              <p class="txt">Я безумно рада , что наша свадьба проходила на базе отдыха «Сосны», ведь там можно организовать абсолютно любую идею! Прекрасные пейзажи для фотографий! Нам подарили номер для молодожёных, подобрали украшения по тематике, помогли найти тамаду, музыкальное сопровождение и многое другое. Мы и наши гости остались очень довольны свадьбой, было море впечатлений! Всем советуем!</p>
+              <p class="names">Анна   <i>+</i>  Константин</p>
+            </div>
+          </li>
+          
+          <li class="clearfix">
+            <img src="img/rev5.png" alt="">
+            <div class="textDiv">
+              <p class="txt">Хорошее место. То, что мы искали. Самый огромный плюс возможность официальной регистрации брака. Это было первым пунктом при выборе места проведения свадьбы. Такой возможностью никто кроме Сосен похвастаться не может. Везде предлагают бутафорскую роспись за те же деньги. Само место классное! То, что нужно! Природа, хорошее украшение зала и территории. Превзошли ожидания. Приятное место. Цены не кусаются. Знакомым порекомендую.</p>
+              <p class="names">Юлия <i>+</i>  Антон</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <img src="img/rev6.png" alt="">
+            <div class="textDiv">
+              <p class="txt"> «Сосны» подошли нам по всем параметрам, включая тему нашей свадьбы. Поэтому мы, недолго думая, забронировали банкетный зал больше, чем за полгода до свадьбы.
+Хотелось бы сказать большое спасибо Вере за помощь в организации нашего Дня. Все гости, да и мы сами остались очень довольны. Всегда, чувствуется, когда человек вкладывает душу в то, что делает, не стоит на месте и старается соответствовать быстро развивающемуся рынку свадебных услуг, то есть, что называется, «быть в тренде». Поэтому если вы ещё не нашли свою локацию, то очень советуем приглядеться к «Соснам» </p>
+              <p class="names">Ирина <i>+</i>  Арсений</p>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  <section class="section5">
+    <div class="container">
+      <h2>Остались вопросы?</h2>
+      <p class="txt">Оставьте заявку и мы свяжемся с Вами в ближайшее время. </p>
+      <form action="">
+        <p class="title">Задать вопрос</p>
+        <div class="clearfix">
+          <div class="input input1"><input type="text" placeholder="Ваше имя"></div>
+          <div class="input input2"><input type="text" placeholder="Ваш телефон"></div>
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Ваши вопросы"></textarea>
+        <input class="btnForm" value="Отправить" type="submit"/>
+      </form>
+      <img class="bokal" src="img/bokal.png" alt="">
+    </div>
+  </section>
+  
+  
+<footer>
+  <p>Разработчик: <a target="_blank" href="https://vk.com/lab.business">Лаборатория Вашего Бизнеса</a></p>
+</footer>
+   
+    
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>  
+<script src="js/slick.min.js"></script>  
+<script src="js/slick-lightbox.min.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>

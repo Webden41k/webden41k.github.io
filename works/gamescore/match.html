@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Z11.NEW 2021 </title>
+  <title>Game Score 2021 </title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/adaptive.css">
@@ -14,27 +14,27 @@
   <div class="container hf">
     <div class="row header-row nav-bar">
       <div class="logo col-md-2">
-        <a href=""><img src="img/logo.svg" alt=""></a>
+        <a href="index.html"><img src="img/logo.svg" alt=""></a>
       </div>
       <div class=" col-md-8 col-lg-6 col-nav">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Главная</a>
+            <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link red-dot" href="#">Live</a>
+            <a class="nav-link red-dot active" href="match.html">Live</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Новости</a>
+            <a class="nav-link" href="results.html">Новости</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Турниры</a>
+            <a class="nav-link" href="tournaments.html">Турниры</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Команды</a>
+            <a class="nav-link" href="commands.html">Команды</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Игроки</a>
+            <a class="nav-link" href="players.html">Игроки</a>
           </li>
         </ul>
       </div>
@@ -69,25 +69,44 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="p-match">
+  <div class="container cont-match">
     <div class="row main-row">
      
-      <div class="col-12 col-sm-6 col-lg-3 main-col c-m3">
-        <a href="" class="main-grey-btn desk">Все результаты</a>
-        
-        <ul class="nav z-tabs" role="tablist">
-          <li class="z-tab-item" role="presentation">
-            <a class="z-tab-link active" id="z-tab1" data-toggle="tab" href="#tabpanel1" role="tab" aria-controls="tabpanel1" aria-selected="true">Прошедшие</a>
-          </li>
-          <li class="z-tab-item" role="presentation">
-            <a class="z-tab-link" id="z-tab2" data-toggle="tab" href="#tabpanel2" role="tab" aria-controls="tabpanel2" aria-selected="false">Будущие</a>
-          </li>
-        </ul>
-        
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="tabpanel1" role="tabpanel" aria-labelledby="z-tab1">
-            <ul class="list-match mob-scroll">
+      <div class="col-12 col-md-6 col-lg-3 main-col">
+        <ul class="list-match">
+              <li>
+                <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
+                <div class="match">
+                  <a class="match-link" href="">
+                    <div class="l-team">
+                      <p class="team-name"><span>TNC Predator</span></p>
+                      <div class="team-logo">
+                        <img class="img" src="img/team1.png" alt="">
+                      </div>
+                    </div>
+                    <div class="score">
+                      <div class="score-data">
+                        <div class="shield-div l">
+                          <span class="shield">1</span>
+                          <span class="shield">3</span>
+                        </div>
+                        <p class="data">1 - 0</p>
+                        <div class="shield-div r">
+                          <span class="shield">2</span>
+                          <span class="shield">3</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="r-team">
+                      <p class="team-name"><span>Fnatic</span></p>
+                      <div class="team-logo">
+                        <img class="img" src="img/team2.png" alt="">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
               <li>
                 <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
                 <div class="match">
@@ -210,287 +229,18 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="tab-pane fade" id="tabpanel2" role="tabpanel" aria-labelledby="z-tab2">
-            <ul class="list-match mob-scroll">
-               <li>
-                <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-                <div class="match">
-                  <a class="match-link" href="">
-                    <div class="l-team">
-                      <p class="team-name"><span>TNC Predator</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team1.png" alt="">
-                      </div>
-                    </div>
-                    <div class="score">
-                      <div class="score-data">
-                        <p class="data">1 - 0</p>
-                      </div>
-                    </div>
-                    <div class="r-team">
-                      <p class="team-name"><span>Fnatic</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team2.png" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-                <div class="match">
-                  <a class="match-link" href="">
-                    <div class="l-team">
-                      <p class="team-name"><span>TNC Predator</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team1.png" alt="">
-                      </div>
-                    </div>
-                    <div class="score">
-                      <div class="score-data">
-                        <p class="data">1 - 0</p>
-                      </div>
-                    </div>
-                    <div class="r-team">
-                      <p class="team-name"><span>Fnatic</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team2.png" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-                <div class="match">
-                  <a class="match-link" href="">
-                    <div class="l-team">
-                      <p class="team-name"><span>TNC Predator</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team1.png" alt="">
-                      </div>
-                    </div>
-                    <div class="score">
-                      <div class="score-data">
-                        <p class="data">1 - 0</p>
-                      </div>
-                    </div>
-                    <div class="r-team">
-                      <p class="team-name"><span>Fnatic</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team2.png" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-                <div class="match">
-                  <a class="match-link" href="">
-                    <div class="l-team">
-                      <p class="team-name"><span>TNC Predator</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team1.png" alt="">
-                      </div>
-                    </div>
-                    <div class="score">
-                      <div class="score-data">
-                        <p class="data">1 - 0</p>
-                      </div>
-                    </div>
-                    <div class="r-team">
-                      <p class="team-name"><span>Fnatic</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team2.png" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-                <div class="match">
-                  <a class="match-link" href="">
-                    <div class="l-team">
-                      <p class="team-name"><span>TNC Predator</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team1.png" alt="">
-                      </div>
-                    </div>
-                    <div class="score">
-                      <div class="score-data">
-                        <p class="data">1 - 0</p>
-                      </div>
-                    </div>
-                    <div class="r-team">
-                      <p class="team-name"><span>Fnatic</span></p>
-                      <div class="team-logo">
-                        <img class="img" src="img/team2.png" alt="">
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
       </div>
-      
-      
-      <div class="col-12 col-sm-6 col-lg-3 main-col c-m1">
-        <a href="" class="main-grey-btn mob">Все результаты</a>
-        <a href="" class="main-grey-btn">Полное расписание</a>
-        
-        <div class="z-tabs single-col">
-          <a href="" class="z-tab-link active">Лайв матчи</a>
-        </div>
-        
-        <ul class="list-match live mob-scroll">
 
-          <li>
-            <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-            <div class="match">
-              <a class="match-link" href="#">
-                <div class="l-team">
-                  <p class="team-name"><span>TNC Predator</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team1.png" alt="">
-                  </div>
-                </div>
-                <div class="score live">
-                  <div class="score-data">
-                    <p class="time">0:00</p>
-                    <p class="data">0</p>
-                    <p class="map"><span class="green">1</span> map 2 <span class="green">0</span></p>
-                  </div>
-                </div>
-                <div class="r-team">
-                  <p class="team-name"><span>Fnatic</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team2.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          
-          <li>
-            <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-            <div class="match">
-              <a class="match-link" href="#">
-                <div class="l-team">
-                  <p class="team-name"><span>TNC Predator</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team1.png" alt="">
-                  </div>
-                </div>
-                <div class="score live">
-                  <div class="score-data">
-                    <p class="time">0:00</p>
-                    <p class="data">0</p>
-                    <p class="map"><span class="green">1</span> map 2 <span class="green">0</span></p>
-                  </div>
-                </div>
-                <div class="r-team">
-                  <p class="team-name"><span>Fnatic</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team2.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          
-          <li>
-            <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-            <div class="match">
-              <a class="match-link" href="#">
-                <div class="l-team">
-                  <p class="team-name"><span>TNC Predator</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team1.png" alt="">
-                  </div>
-                </div>
-                <div class="score live">
-                  <div class="score-data">
-                    <p class="time">0:00</p>
-                    <p class="data">0</p>
-                    <p class="map"><span class="green">1</span> map 2 <span class="green">0</span></p>
-                  </div>
-                </div>
-                <div class="r-team">
-                  <p class="team-name"><span>Fnatic</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team2.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          
-          <li>
-            <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-            <div class="match active">
-              <a class="match-link" href="#">
-                <div class="l-team">
-                  <p class="team-name"><span>TNC Predator</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team1.png" alt="">
-                  </div>
-                </div>
-                <div class="score live">
-                  <div class="score-data">
-                    <p class="time">0:00</p>
-                    <p class="data">0</p>
-                    <p class="map"><span class="green">1</span> map 2 <span class="green">0</span></p>
-                  </div>
-                </div>
-                <div class="r-team">
-                  <p class="team-name"><span>Fnatic</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team2.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-          
-          <li>
-            <p class="match-name">TNC PredatorTNC PredatorTNC Predator</p>
-            <div class="match">
-              <a class="match-link" href="#">
-                <div class="l-team">
-                  <p class="team-name"><span>TNC Predator</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team1.png" alt="">
-                  </div>
-                </div>
-                <div class="score live">
-                  <div class="score-data">
-                    <p class="time">0:00</p>
-                    <p class="data">0</p>
-                    <p class="map"><span class="green">1</span> map 2 <span class="green">0</span></p>
-                  </div>
-                </div>
-                <div class="r-team">
-                  <p class="team-name"><span>Fnatic</span></p>
-                  <div class="team-logo">
-                    <img class="img" src="img/team2.png" alt="">
-                  </div>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
-        
+      <div class="col-12 col-lg-5 main-col col-match">
+        <div class="match-translation">
+          <div class="bg-trsl"></div>
+          <div class="md-trsl"></div>
+        </div>
       </div>
       
-      <div class="col-12 col-lg-6 main-col c-m2">
-        <a href="" class="main-red-btn ">переход на страницу матча <i class="icon"></i></a>
-        
+ 
+      <div class="col-12 col-md-6 col-lg-4 main-col col-dmatch">
+
         <div class="details-match">
           <div class="dm-header">
             <div class="l-team">

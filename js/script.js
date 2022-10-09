@@ -1,3 +1,9 @@
+$(window).on('load', function() { 
+  $('#preloader').delay(400).fadeOut('slow');
+  $('body').delay(400).css({'overflow':'visible'});
+  $('section').delay(400).css({'filter':'none'});
+})
+
 $(document).ready(function () {
   $('.loader').on('click', function () {
     $(".loader-text").addClass("anim");
@@ -13,6 +19,4 @@ $(document).ready(function () {
     $(this).toggleClass("active");
     $(".menu").toggleClass("open");
   });
-
-
 });

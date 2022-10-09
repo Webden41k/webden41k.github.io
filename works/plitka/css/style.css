@@ -209,7 +209,7 @@ h2 { font-size: 20px; margin-bottom: 10px; padding-top: 10px; }
 .mainSection .desingItems li a img { width: 100%; display: block; margin-bottom: 15px; }
 .mainSection .desingItems li span { display: block; text-align: center; line-height: 20px; padding: 0 20px; }
 .mainSection .newsSocial { background: #f1f2f5; padding: 30px 0; }
-.mainSection .newsSocial .news { width: 33.33%; float: left; }
+.mainSection .newsSocial .news { width: 100%; float: left; }
 .mainSection .newsSocial .news li { border-bottom: 2px solid #d4d3d0; padding-bottom: 25px; margin-bottom: 5px; }
 .mainSection .newsSocial .news li a:hover { text-decoration: none; }
 .mainSection .newsSocial .news .date { font-size: 12px; color: #666; display: block; padding: 5px 0 10px 0; }

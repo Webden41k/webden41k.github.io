@@ -1,4 +1,20 @@
+@media screen and (max-width: 1599px) {
+  .works .list-works .item a .name{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
 @media screen and (max-width: 1279px) {
+  
+  .works .list-works{
+    gap: 30px;
+  }
+  
+  .works .list-works .item {
+    width: calc(50% - 20px);
+  }
+  
   .main-info .profession {
     font-size: 7rem;
     line-height: 8rem;
@@ -9,9 +25,33 @@
     line-height: 5rem;
     letter-spacing: 0.2em;
   }
+  
+  h2{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 50px;
+  }
+  
+  
+  .footer .copyright{
+    width: 100%;
+  }
+  
+  .about p{
+    max-width: 85%;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  
+  .works .list-works{
+    gap: 20px;
+  }
+  
+  .works .list-works .item {
+    width: calc(50% - 10px);
+  }
+  
   .main-info .profession {
     font-size: 5rem;
     line-height: 6rem;
@@ -30,9 +70,63 @@
   .header .menu li{
     margin-right: 8px;
   }
+  
+  .header .logo .spec{
+    display: none;
+  }
+  
+  .skills .skills-list li{
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+  
+  .skills .skills-list li i{
+    font-size: 3rem;
+  }
+  
+  .header{
+    margin-bottom: 30px;
+  }
+  
+  section{
+    height: 100%;
+    min-height: 100%;
+    overflow: scroll;
+  }
+  
+  .about .img-me{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .about .img-me img{
+    width: 186px;
+    height: 186px;
+  }
+  
+  h3{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  
+  .about p{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  
+  .works{
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
+
+  
+  .works .list-works .item {
+    width: 100%;
+  }
+  
   .main-info .profession {
     padding-left: 20px;
     font-size: 5.5rem;
@@ -76,6 +170,10 @@
   
   .header .menu li a{
     font-size: 1.2rem;
+  }
+  
+  .skills .skills-list li{
+    width: 50%;
   }
 }
 
@@ -142,6 +240,43 @@
     margin-right: 9px;
     padding-right: 11px;
   }
+  
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 50px;
+  }
+  
+  .skills .skills-list li{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  
+  .skills .skills-list li i {
+    font-size: 4rem;
+  }
+  
+  h3{
+    text-align: left;
+  }
+
+  .about p{
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .about{
+    margin-bottom: 20px;
+  }
+  
+  .footer .copyright{
+    font-size: 0.9rem;
+  }
+  
+  .works .list-works .item{
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 374px) {
@@ -164,6 +299,15 @@
     font-size: 1rem;
     margin-right: 7px;
     padding-right: 9px;
+  }
+  
+  .works .list-works .item a .name {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  .works .list-works .item{
+    height: 220px;
   }
 }
 

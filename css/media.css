@@ -1,0 +1,170 @@
+@media screen and (max-width: 1279px) {
+  .main-info .profession {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+
+  .main-info .profession span {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-info .profession {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .main-info .profession span {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.2em;
+  }
+  
+  .header .menu{
+    margin-right: 0;
+  }
+  
+  .header .menu li{
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-info .profession {
+    padding-left: 20px;
+    font-size: 5.5rem;
+    line-height: 7rem;
+  }
+
+  .main-info .profession span {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    letter-spacing: 0.35em;
+  }
+
+  .header{
+    position: relative;
+  }
+  
+  .header .menu{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #000;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .header .menu li a:before{
+    content: "";
+  }
+  
+  .header .menu li a:after {
+    content: " - " "0" counter(item) ;
+    margin-left: 3px;
+    text-align: right;
+    color: #996515;
+}
+  
+  .header .menu li{
+    margin-right: 0px;
+    text-align: right;
+  }
+  
+  .header .menu li a{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  section{
+    padding: 20px;
+  }
+  
+  .main-info .profession {
+    padding-left: 0;
+    text-align: left;
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+
+  .main-info .profession span {
+    display: block;
+    line-height: 6rem;
+    font-size: 2.2rem;
+  }
+
+  .main-info .fullname {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+  
+  .footer .list-contacts{
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  
+  .footer .list-contacts:after{
+    display: none;
+  }
+  
+  .footer .contacts{
+    position: static;
+  }
+  
+  .footer .list-contacts li{
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  
+  .footer .list-contacts li i{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .loader .loader-text{
+    font-size: 0.9rem;
+  }
+  
+  .loader .loader-text .name{
+    font-size: 1.1rem;
+    margin-right: 9px;
+    padding-right: 11px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .main-info .fullname{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .main-info .profession{
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  
+  .main-info .profession span{
+    line-height: 4rem;
+    font-size: 1.7rem;
+  }
+  
+  .loader .loader-text .name{
+    font-size: 1rem;
+    margin-right: 7px;
+    padding-right: 9px;
+  }
+}
+
+

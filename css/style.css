@@ -1,14 +1,14 @@
-@font-face { font-family: 'Saira'; src: url("/fonts/saira/Saira-Regular.ttf"); }
-@font-face { font-family: 'Saira-Bold'; src: url("/fonts/saira/Saira-Bold.ttf"); }
-@font-face { font-family: 'Saira-Light'; src: url("/fonts/saira/Saira-Light.ttf"); }
-@font-face { font-family: 'Saira-Thin'; src: url("/fonts/saira/Saira-Thin.ttf"); }
-@font-face { font-family: 'Poppins'; src: url("/fonts/poppins/Poppins-Regular.ttf"); }
-@font-face { font-family: 'Poppins-Bold'; src: url("/fonts/poppins/Poppins-Bold.ttf"); }
-@font-face { font-family: 'SanMarinoBeach'; src: url("/fonts/SanMarinoBeach/SanMarinoBeach-2OOLW.ttf"); }
-@font-face { font-family: 'Motion'; src: url("/fonts/motion/Motion.ttf"); }
-@font-face { font-family: 'Bernier'; src: url("/fonts/bernier/BERNIERShade-Regular.otf"); }
-@font-face { font-family: 'SF-MONO-L'; src: url("/fonts/sf-mono/SF-Mono-Light.ttf"); }
-@font-face { font-family: 'SF-MONO'; src: url("/fonts/sf-mono/SF-Mono-Regular.ttf"); }
+@font-face { font-family: 'Saira'; src: url("/fonts/saira/Saira-Regular.ttf"); font-display: block; }
+@font-face { font-family: 'Saira-Bold'; src: url("/fonts/saira/Saira-Bold.ttf"); font-display: block; }
+@font-face { font-family: 'Saira-Light'; src: url("/fonts/saira/Saira-Light.ttf"); font-display: block; }
+@font-face { font-family: 'Saira-Thin'; src: url("/fonts/saira/Saira-Thin.ttf"); font-display: block; }
+@font-face { font-family: 'Poppins'; src: url("/fonts/poppins/Poppins-Regular.ttf"); font-display: block; }
+@font-face { font-family: 'Poppins-Bold'; src: url("/fonts/poppins/Poppins-Bold.ttf"); font-display: block; }
+@font-face { font-family: 'SanMarinoBeach'; src: url("/fonts/SanMarinoBeach/SanMarinoBeach-2OOLW.ttf"); font-display: block; }
+@font-face { font-family: 'Motion'; src: url("/fonts/motion/Motion.ttf"); font-display: block; }
+@font-face { font-family: 'Bernier'; src: url("/fonts/bernier/BERNIERShade-Regular.otf"); font-display: block; }
+@font-face { font-family: 'SF-MONO-L'; src: url("/fonts/sf-mono/SF-Mono-Light.ttf"); font-display: block; }
+@font-face { font-family: 'SF-MONO'; src: url("/fonts/sf-mono/SF-Mono-Regular.ttf"); font-display: block; }
 body { background: #000; color: #fff; font-family: 'Saira'; overflow: hidden; }
 
 h2 { font-family: 'SanMarinoBeach'; font-size: 4rem; line-height: 4rem; letter-spacing: 0.2em; padding-bottom: 30px; text-transform: uppercase; text-align: center; position: relative; color: #b3a577; margin-bottom: 80px; }

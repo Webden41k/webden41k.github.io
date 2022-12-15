@@ -1,8 +1,9 @@
-/* line 22, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/* STYLE FOR HTML THEME - PRIZMA*/
+/* line 15, /Users/webden41k/Desktop/prizma/sass/style.scss */
 img {
   display: block; }
 
-/* line 30, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/* line 23, /Users/webden41k/Desktop/prizma/sass/style.scss */
 body {
   margin: 0;
   padding: 0;
@@ -10,22 +11,24 @@ body {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif; }
 
-/* line 38, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Style Number list*/
+/* line 32, /Users/webden41k/Desktop/prizma/sass/style.scss */
 ol {
   font-size: 18px;
   list-style: none;
   padding-left: 0; }
-  /* line 43, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 37, /Users/webden41k/Desktop/prizma/sass/style.scss */
   ol li {
     margin-bottom: 10px;
     counter-increment: counter; }
-    /* line 47, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 41, /Users/webden41k/Desktop/prizma/sass/style.scss */
     ol li:before {
       content: counter(counter) ".";
       min-width: 30px;
       display: inline-block; }
 
-/* line 55, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Style Default list*/
+/* line 50, /Users/webden41k/Desktop/prizma/sass/style.scss */
 ul {
   list-style: none;
   padding-left: 0;
@@ -34,12 +37,12 @@ ul {
   line-height: 22px;
   font-weight: 300;
   color: #8E8E8E; }
-  /* line 64, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 59, /Users/webden41k/Desktop/prizma/sass/style.scss */
   ul li {
     margin-bottom: 5px;
     position: relative;
     padding-left: 20px; }
-    /* line 69, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 64, /Users/webden41k/Desktop/prizma/sass/style.scss */
     ul li:before {
       content: "";
       position: absolute;
@@ -49,8 +52,29 @@ ul {
       background: #EF9011;
       left: 0;
       top: 10px; }
+  /* line 76, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  ul.default {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px; }
+    /* line 81, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    ul.default li {
+      padding-left: 0;
+      margin: 20px 0 0 0; }
+      /* line 85, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      ul.default li:before {
+        display: none; }
 
-/* line 82, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/* line 92, /Users/webden41k/Desktop/prizma/sass/style.scss */
+.blue {
+  color: #00A3FF; }
+
+/* line 96, /Users/webden41k/Desktop/prizma/sass/style.scss */
+.orange {
+  color: #EF9011; }
+
+/*Style Background Theme*/
+/* line 101, /Users/webden41k/Desktop/prizma/sass/style.scss */
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -60,8 +84,18 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center; }
+  /* line 111, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .wrapper.bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 4; }
 
-/* line 94, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Style Left Gradient Circle*/
+/* line 123, /Users/webden41k/Desktop/prizma/sass/style.scss */
 .circle-left {
   width: 1000px;
   height: 1000px;
@@ -73,7 +107,8 @@ ul {
   bottom: -500px;
   z-index: 1; }
 
-/* line 106, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Style Right Gradient Circle*/
+/* line 136, /Users/webden41k/Desktop/prizma/sass/style.scss */
 .circle-right {
   width: 50vw;
   height: 100vh;
@@ -85,12 +120,72 @@ ul {
   top: 10vh;
   z-index: 1; }
 
-/* line 119, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Style Modal Window*/
+/* line 149, /Users/webden41k/Desktop/prizma/sass/style.scss */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  width: auto;
+  width: 700px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  background: #203341;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex-direction: column; }
+  /* line 167, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .modal.open {
+    display: flex; }
+  /* line 171, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .modal .img {
+    width: 100%;
+    height: auto; }
+  /* line 176, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .modal p {
+    line-height: 24px;
+    margin: 20px 0 0 0; }
+
+/*Style Button Close Modal*/
+/* line 183, /Users/webden41k/Desktop/prizma/sass/style.scss */
+.close-modal {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 80px;
+  height: 80px;
+  z-index: 6;
+  cursor: pointer; }
+  /* line 193, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .close-modal.open {
+    display: block; }
+  /* line 197, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .close-modal .bar1, .close-modal .bar2 {
+    width: 80px;
+    height: 2px;
+    display: block;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 40px;
+    position: absolute; }
+  /* line 208, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  .close-modal .bar2 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+/*Style Main Block*/
+/* line 215, /Users/webden41k/Desktop/prizma/sass/style.scss */
 main {
   background: #1E242D;
-  width: 85vw;
+  width: 1330px;
   height: 85vh;
-  max-width: 1330px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -99,7 +194,8 @@ main {
   border: 10px solid #000;
   box-shadow: 0 0 10px #000; }
 
-/* line 133, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Style Header*/
+/* line 229, /Users/webden41k/Desktop/prizma/sass/style.scss */
 header {
   height: 60px;
   background: #171D25;
@@ -112,12 +208,12 @@ header {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: 2; }
-  /* line 147, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 243, /Users/webden41k/Desktop/prizma/sass/style.scss */
   header .logo {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    /* line 152, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 248, /Users/webden41k/Desktop/prizma/sass/style.scss */
     header .logo .icon {
       font-family: 'Pacifico', cursive;
       font-size: 24px;
@@ -130,14 +226,16 @@ header {
       align-items: center;
       justify-content: center;
       margin-right: 10px;
-      text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5); }
-    /* line 168, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+      padding: 0 1px 2px 0;
+      box-sizing: border-box; }
+    /* line 265, /Users/webden41k/Desktop/prizma/sass/style.scss */
     header .logo .logo-txt {
       font-weight: 300;
       text-transform: uppercase;
       font-size: 22px;
       letter-spacing: 0.1em; }
-  /* line 176, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 273, /Users/webden41k/Desktop/prizma/sass/style.scss */
   header nav {
     font-size: 18px;
     letter-spacing: 0.03em;
@@ -146,7 +244,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: stretch; }
-    /* line 185, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 282, /Users/webden41k/Desktop/prizma/sass/style.scss */
     header nav a {
       display: block;
       line-height: 60px;
@@ -155,7 +253,7 @@ header {
       text-decoration: none;
       position: relative;
       margin-left: 10px; }
-      /* line 194, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 291, /Users/webden41k/Desktop/prizma/sass/style.scss */
       header nav a:before {
         content: "";
         width: 0;
@@ -169,26 +267,93 @@ header {
         background: #EF9011;
         -webkit-transition: 0.1s;
         transition: 0.1s; }
-      /* line 210, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 307, /Users/webden41k/Desktop/prizma/sass/style.scss */
       header nav a.active {
         color: #EF9011; }
-        /* line 213, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 310, /Users/webden41k/Desktop/prizma/sass/style.scss */
         header nav a.active:hover {
           background: transparent;
           cursor: default; }
-        /* line 218, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 315, /Users/webden41k/Desktop/prizma/sass/style.scss */
         header nav a.active:before {
           display: none; }
-      /* line 223, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 320, /Users/webden41k/Desktop/prizma/sass/style.scss */
       header nav a:hover {
         background: #1E242D; }
-        /* line 226, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 323, /Users/webden41k/Desktop/prizma/sass/style.scss */
         header nav a:hover:before {
           width: 100%;
           -webkit-transition: 0.2s;
           transition: 0.2s; }
+  /* line 333, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  header .nav-btn {
+    display: none;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    /* line 350, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+    /* line 368, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn .bar1 {
+      top: 5px; }
+    /* line 372, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn .bar2,
+    header .nav-btn .bar3 {
+      top: 17px; }
+    /* line 377, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn .bar4 {
+      top: 29px; }
+    /* line 381, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn.open .bar1 {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+    /* line 387, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn.open .bar2 {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    /* line 394, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn.open .bar3 {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    /* line 401, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    header .nav-btn.open .bar4 {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
 
-/* line 237, /Users/webden41k/Desktop/prizma/sass/style.scss */
+/*Start Style Inner Elements*/
+/* line 410, /Users/webden41k/Desktop/prizma/sass/style.scss */
 section {
   display: none;
   flex-direction: row;
@@ -197,10 +362,10 @@ section {
   position: relative;
   z-index: 1;
   height: calc(100% - 60px); }
-  /* line 246, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 419, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section.visible {
     display: flex; }
-  /* line 250, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 423, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .fully {
     height: 100%;
     border-bottom-left-radius: 30px;
@@ -209,7 +374,7 @@ section {
     padding: 50px 35px;
     display: flex;
     flex-direction: column; }
-  /* line 261, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 434, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .left {
     width: 40%;
     overflow: scroll;
@@ -218,7 +383,7 @@ section {
     box-sizing: border-box;
     display: flex;
     flex-direction: column; }
-  /* line 271, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 444, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .right {
     width: 60%;
     overflow: scroll;
@@ -227,14 +392,14 @@ section {
     box-sizing: border-box;
     display: flex;
     flex-direction: column; }
-  /* line 281, /Users/webden41k/Desktop/prizma/sass/style.scss */
-  section .left, section .right, section .work-list, section .post-list {
+  /* line 454, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  section, section .left, section .right, section .work-list, section .post-list {
     -ms-overflow-style: none;
     scrollbar-width: none; }
-    /* line 285, /Users/webden41k/Desktop/prizma/sass/style.scss */
-    section .left::-webkit-scrollbar, section .right::-webkit-scrollbar, section .work-list::-webkit-scrollbar, section .post-list::-webkit-scrollbar {
+    /* line 458, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    section::-webkit-scrollbar, section .left::-webkit-scrollbar, section .right::-webkit-scrollbar, section .work-list::-webkit-scrollbar, section .post-list::-webkit-scrollbar {
       display: none; }
-  /* line 292, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 465, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section.line-on:before {
     content: "";
     display: block;
@@ -245,19 +410,17 @@ section {
     margin-left: 8px;
     background: #203341;
     position: absolute; }
-  /* line 305, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 478, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .me-img {
     margin: 0 auto 40px auto;
-    width: 400px;
-    height: 400px;
-    min-height: 400px;
-    overflow: hidden;
+    width: 360px;
+    height: 360px;
     box-shadow: 8px 8px 0 #203341; }
-    /* line 313, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 484, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .me-img img {
       width: 100%;
       height: 100%; }
-  /* line 319, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 490, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .btn-linear {
     padding: 0 35px;
     margin: 0px auto 40px auto;
@@ -272,10 +435,10 @@ section {
     font-weight: 300;
     letter-spacing: 0.05em;
     font-size: 20px; }
-    /* line 334, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 505, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .btn-linear:hover {
       opacity: 0.9; }
-  /* line 339, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 510, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .btn-default {
     display: block;
     width: max-content;
@@ -293,21 +456,23 @@ section {
     letter-spacing: 0.05em;
     font-size: 20px;
     margin: 20px 0; }
-    /* line 357, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 528, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .btn-default:hover {
       background: #00A3FF;
       color: #fff;
+      -webkit-transition: 0.1s;
       transition: 0.1s; }
-    /* line 363, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 535, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .btn-default.orange {
       border-color: #EF9011;
       color: #EF9011; }
-      /* line 367, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 539, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .btn-default.orange:hover {
         background: #EF9011;
         color: #fff;
+        -webkit-transition: 0.1s;
         transition: 0.1s; }
-  /* line 375, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 548, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section p {
     font-size: 16px;
     line-height: 24px;
@@ -316,7 +481,7 @@ section {
     margin: 0 0 20px 0;
     font-weight: 300;
     letter-spacing: 0.02em; }
-    /* line 386, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 559, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section p.point:before {
       content: "";
       display: block;
@@ -329,19 +494,19 @@ section {
       background: #1E242D;
       left: -35px;
       top: 4px; }
-    /* line 401, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 574, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section p.title-line {
       position: relative;
       font-weight: 400;
       font-size: 30px;
       padding-left: 30px; }
-      /* line 407, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 580, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section p.title-line span {
         background: #1E242D;
         z-index: 2;
         position: relative;
         padding: 0 10px; }
-      /* line 414, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 587, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section p.title-line:before {
         content: "";
         display: block;
@@ -353,7 +518,7 @@ section {
         background: #203341;
         left: -35px;
         top: 4px; }
-      /* line 427, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 600, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section p.title-line:after {
         content: "";
         display: block;
@@ -364,21 +529,22 @@ section {
         right: -25px;
         top: 12px;
         z-index: 1; }
-    /* line 440, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 613, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section p.title-two-line {
       position: relative;
       font-weight: 300;
       font-size: 20px;
       text-align: center;
       text-transform: capitalize;
-      margin-top: auto; }
-      /* line 448, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      margin-top: auto;
+      margin-bottom: 15px; }
+      /* line 622, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section p.title-two-line span {
         background: #1E242D;
         z-index: 2;
         position: relative;
         padding: 0 20px; }
-      /* line 455, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 629, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section p.title-two-line:after {
         content: "";
         display: block;
@@ -389,7 +555,7 @@ section {
         right: 0px;
         top: 13px;
         z-index: 1; }
-  /* line 470, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 644, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section h1 {
     font-weight: 600;
     font-size: 50px;
@@ -397,7 +563,7 @@ section {
     margin: 0 0 30px 0;
     padding: 30px 0 40px 0;
     position: relative; }
-    /* line 479, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 653, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section h1.line-bottom:after {
       content: "";
       display: block;
@@ -408,7 +574,7 @@ section {
       right: -25px;
       bottom: 0;
       z-index: 1; }
-    /* line 492, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 666, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section h1 .prof {
       font-weight: 400;
       display: block;
@@ -416,7 +582,7 @@ section {
       padding: 20px 0 0 0;
       font-size: 30px;
       line-height: 30px; }
-  /* line 502, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 676, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section h2 {
     font-weight: 700;
     font-size: 36px;
@@ -426,7 +592,7 @@ section {
     position: relative;
     text-transform: capitalize;
     text-shadow: 2px 3px 0 #000; }
-    /* line 512, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 686, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section h2:before {
       content: "";
       display: block;
@@ -437,7 +603,7 @@ section {
       left: -35px;
       top: 50%;
       margin-top: -1px; }
-  /* line 525, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 699, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section h3 {
     position: relative;
     font-weight: 500;
@@ -446,7 +612,7 @@ section {
     letter-spacing: 0.05em;
     margin: 0;
     padding: 15px 0 10px 27px; }
-    /* line 534, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 708, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section h3:before {
       content: "";
       display: block;
@@ -460,7 +626,7 @@ section {
       left: -35px;
       top: 50%;
       margin-top: -7px; }
-    /* line 549, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 723, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section h3:after {
       content: "";
       display: block;
@@ -473,55 +639,55 @@ section {
       left: -17px;
       top: 50%;
       margin-top: 1px; }
-  /* line 564, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 738, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section h5 {
     font-size: 17px;
     line-height: 20px;
     font-weight: 400;
     color: #fff;
     margin: 15px 0; }
-    /* line 571, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 745, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section h5 span {
       margin-top: 5px;
       color: #00A3FF;
       font-size: 14px;
       font-weight: 300;
       display: block; }
-  /* line 580, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 754, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .social {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0; }
-    /* line 587, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 761, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .social li {
       margin: 0 7px;
       padding: 0; }
-      /* line 591, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 765, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .social li:before {
         display: none; }
-      /* line 595, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 769, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .social li a {
         padding: 5px;
         display: block; }
-        /* line 598, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 772, /Users/webden41k/Desktop/prizma/sass/style.scss */
         section .social li a:hover {
           filter: invert(14%) sepia(73%) saturate(6336%) hue-rotate(264deg) brightness(82%) contrast(87%); }
-    /* line 604, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 778, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .social .icon {
       width: 25px;
       height: 25px; }
-  /* line 610, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 784, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .numbers {
     font-size: 18px;
     margin: 10px 0; }
-    /* line 614, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 788, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .numbers li {
       display: flex;
       flex-direction: row;
       align-items: center; }
-      /* line 619, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 793, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .numbers li hr {
         flex-grow: 2;
         height: 2px;
@@ -529,14 +695,14 @@ section {
         margin: 0 20px;
         border: 0;
         background: #8E8E8E; }
-  /* line 630, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 804, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .service-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 0 -30px 0; }
-    /* line 637, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 811, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .service-list .serv {
       width: 48%;
       background: #203341;
@@ -549,18 +715,18 @@ section {
       margin-bottom: 30px;
       border: 1px solid #171D25;
       box-shadow: 0 0 4px #000; }
-      /* line 650, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 824, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .service-list .serv:before {
         display: none; }
-      /* line 654, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 828, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .service-list .serv .icon {
         width: 100px;
         height: 100px; }
-        /* line 658, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 832, /Users/webden41k/Desktop/prizma/sass/style.scss */
         section .service-list .serv .icon img {
           width: 100%;
           height: 100%; }
-      /* line 664, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 838, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .service-list .serv .title {
         text-align: center;
         width: 100%;
@@ -570,46 +736,46 @@ section {
         color: #ffffff;
         padding: 15px 0;
         border-bottom: 2px solid #171D25; }
-      /* line 676, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 850, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .service-list .serv .list {
         margin-bottom: 20px;
         margin-top: auto; }
-        /* line 679, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 853, /Users/webden41k/Desktop/prizma/sass/style.scss */
         section .service-list .serv .list li {
           margin-bottom: 10px;
           position: relative;
           font-size: 18px;
           text-align: center; }
-      /* line 687, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 861, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .service-list .serv .btn-default {
         margin: auto 0 0 0; }
-  /* line 693, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 867, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    /* line 698, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 872, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form div {
       margin-bottom: 20px;
       width: 100%; }
-      /* line 702, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 876, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section form div.w50 {
         width: 48%; }
-    /* line 707, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 881, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form .error {
       font-size: 14px;
       padding-top: 5px;
       color: #E54E47;
       letter-spacing: 0.05em;
       margin: 0; }
-    /* line 715, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 889, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form label {
       display: block;
       margin-bottom: 5px;
       color: #8E8E8E;
       font-size: 18px;
       font-weight: 300; }
-    /* line 723, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 897, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form input, section form textarea, section form select {
       width: 100%;
       line-height: 35px;
@@ -625,19 +791,19 @@ section {
       font-family: 'Montserrat', sans-serif;
       font-weight: 300;
       cursor: pointer; }
-    /* line 740, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 914, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form .select {
       padding-right: 15px;
       box-sizing: border-box;
       margin-bottom: 0;
       background: #203341; }
-    /* line 747, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 921, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form textarea {
       resize: none;
       height: 160px;
       padding: 10px 15px;
       line-height: 22px; }
-    /* line 755, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 929, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section form .btn {
       cursor: pointer;
       height: 50px;
@@ -650,16 +816,16 @@ section {
       font-weight: 500;
       font-size: 18px;
       text-transform: uppercase; }
-      /* line 768, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 942, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section form .btn:hover {
         color: #fff;
         background: #EF9011; }
-  /* line 775, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 949, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .work-tabs {
     display: flex;
     flex-direction: row;
     margin: 10px 0; }
-    /* line 780, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 954, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .work-tabs li {
       padding-left: 0;
       margin-right: 20px;
@@ -669,7 +835,7 @@ section {
       cursor: pointer;
       position: relative;
       padding-bottom: 3px; }
-      /* line 790, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 964, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-tabs li:before {
         display: block;
         width: 0;
@@ -677,18 +843,20 @@ section {
         bottom: 0;
         top: auto;
         margin-top: 0;
+        -webkit-transition: 0.2s;
         transition: 0.2s; }
-      /* line 800, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 975, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-tabs li.active {
         color: #EF9011; }
-        /* line 803, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 978, /Users/webden41k/Desktop/prizma/sass/style.scss */
         section .work-tabs li.active:before {
           width: 100%; }
-      /* line 809, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 984, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-tabs li:hover:before {
         width: 100%;
+        -webkit-transition: 0.2s;
         transition: 0.2s; }
-  /* line 817, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 993, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .work-list {
     width: 100%;
     height: 100%;
@@ -697,8 +865,9 @@ section {
     flex-wrap: wrap;
     gap: 20px;
     overflow: hidden;
-    overflow-y: scroll; }
-    /* line 827, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    overflow-y: scroll;
+    align-content: flex-start; }
+    /* line 1004, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .work-list li {
       padding-left: 0;
       background: #203341;
@@ -707,11 +876,11 @@ section {
       margin-bottom: 0px;
       position: relative;
       cursor: pointer; }
-      /* line 836, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1013, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-list li .img {
         width: 100%;
         height: 100%; }
-      /* line 841, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1018, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-list li span {
         display: none;
         position: absolute;
@@ -728,13 +897,13 @@ section {
         padding: 20px;
         box-sizing: border-box;
         text-align: center; }
-      /* line 859, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1036, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-list li:before {
         display: none; }
-      /* line 864, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1041, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .work-list li:hover span {
         display: flex; }
-  /* line 873, /Users/webden41k/Desktop/prizma/sass/style.scss */
+  /* line 1050, /Users/webden41k/Desktop/prizma/sass/style.scss */
   section .post-list {
     width: 100%;
     height: 100%;
@@ -744,7 +913,7 @@ section {
     gap: 20px;
     overflow: hidden;
     overflow-y: scroll; }
-    /* line 883, /Users/webden41k/Desktop/prizma/sass/style.scss */
+    /* line 1060, /Users/webden41k/Desktop/prizma/sass/style.scss */
     section .post-list li {
       padding-left: 0;
       background: #203341;
@@ -752,29 +921,31 @@ section {
       height: 300px;
       position: relative;
       cursor: pointer; }
-      /* line 891, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1068, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .post-list li .img {
         width: 100%;
-        height: 220px;
+        height: 232px;
         overflow: hidden; }
-        /* line 896, /Users/webden41k/Desktop/prizma/sass/style.scss */
+        /* line 1073, /Users/webden41k/Desktop/prizma/sass/style.scss */
         section .post-list li .img img {
           display: block;
           width: 100%;
           min-height: 100%;
           height: auto; }
-      /* line 904, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1081, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .post-list li p {
         color: #ffffff;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-        padding: 8px 10px 0 10px;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 10px 10px 0 10px;
         box-sizing: border-box;
-        height: 72px;
+        height: 60px;
         overflow: hidden; }
-      /* line 915, /Users/webden41k/Desktop/prizma/sass/style.scss */
+      /* line 1092, /Users/webden41k/Desktop/prizma/sass/style.scss */
       section .post-list li:before {
         display: none; }
+
+/*END Style Inner Elements*/
 
 /*# sourceMappingURL=style.css.map */

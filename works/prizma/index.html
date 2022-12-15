@@ -2,18 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <title>Prizma</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Pacifico&family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  
+<!--CSS FILES-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
 <div class="wrapper">
  
+<!--START PAGES-->
+ 
   <main>
+<!--HEADER-->
     <header>
       <div class="logo">
         <div class="icon">P</div>
@@ -27,24 +41,52 @@
         <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
       </nav>
+      
+      <div class="nav-btn">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+        <span class="bar4"></span>
+      </div>
     </header>
-    
-    <section id="home" class="line-on ">
+
+<!--HOME PAGE-->  
+    <section id="home" class="line-on visible">
       <div class="left">
         <div class="me-img">
           <img src="img/my-photo.png" alt="">
         </div>
         
-        <a class="btn-linear" href="">Download Rezume</a>
+        <a class="btn-linear" href="img/rezume.pdf" download>Download Rezume</a>
         
         <p class="title-two-line"><span>Me social contacts</span></p>
         
         <ul class="social">
-          <li><a href=""><img class="icon" src="img/in-icon.png" alt=""></a></li>
-          <li><a href=""><img class="icon" src="img/fb-icon.png" alt=""></a></li>
-          <li><a href=""><img class="icon" src="img/tw-icon.png" alt=""></a></li>
-          <li><a href=""><img class="icon" src="img/inst-icon.png" alt=""></a></li>
-          <li><a href=""><img class="icon" src="img/sk-icon.png" alt=""></a></li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img class="icon" src="img/in-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/" target="_blank">
+              <img class="icon" src="img/fb-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+              <img class="icon" src="img/tw-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icon" src="img/inst-icon.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.skype.com/" target="_blank">
+              <img class="icon" src="img/sk-icon.png" alt="">
+            </a>
+          </li>
         </ul>
       </div>
       
@@ -56,21 +98,21 @@
         <p class="point">Experience creating quarterly accruals based on trends and forecasted expenses.</p>
         <p class="point">Financial Analysis, Strategic Planning, Trend Analysis, Market Assessment, Team Leadership</p>
         
-         <a href="" class="btn-default orange">View Works</a>
+        <a href="#portfolio" class="btn-default orange">View Works</a>
       </div>
     </section>
-    
+
+<!--ABOUT PAGE-->  
     <section id="about" class="line-on">
       <div class="left">
         <h2>About me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis illo accusamus recusandae quasi, iusto adipisci odit nemo ducimus consequuntur labore architecto, eum facilis molestiae sapiente repellendus cumque. Hic, beatae!</p>
-        <p>333 Oklahoma Road, New York, NY 10024 <br> United States</p>
+        <p>Oklahoma Road, New York, NY 10024 <br> United States</p>
         <p>(917) 407-5112</p>
         <p>workjones@gmail.com</p>
-        <a href="" class="btn-default orange">View Works</a>
+        <a href="#blog" class="btn-default orange">Read Blog</a>
       </div>
-      
-      
+
       <div class="right">
         <h3>Employment History</h3>
         <h5>Financial Analyst at GEO Corp., New York <span>October 2012 - September 2019</span></h5>
@@ -93,7 +135,6 @@
           <li>Modeled anticipated revenue charts to accurately track our progress in relation to forecasts and intentions.</li>
         </ul>
         
-        
         <h3>Education</h3>
         <h5>Bachelor of Finance, Villanova University, King of Prussia <span>August 2004 - May 2008</span></h5>
         <h5>High School Diploma, Camden High School, Camden <span>September 2000 - June 2004</span></h5>
@@ -102,11 +143,14 @@
         <h5>Devin Strazza from GEO Corp.</h5>
       </div>
     </section>
-    
-    <section id="service" class="line-on ">
+
+
+<!--SERVICE PAGE-->  
+    <section id="service" class="line-on">
       <div class="left">
         <h2>Service</h2>
         <p>Worked to reduce business expenses and develop logical and advantageous operating plan budgets.</p>
+        
         <ol class="numbers">
           <li>Financial Analysis <hr> 9$ / hrs</li>
           <li>Strategic Planning <hr> 30$ / hrs</li>
@@ -115,7 +159,7 @@
           <li>Team Leadership <hr> 25$ / hrs</li>
         </ol>
         
-        <a href="" class="btn-default orange">View Works</a>
+        <a href="#portfolio" class="btn-default orange">View Works</a>
       </div>
       
       <div class="right">
@@ -129,7 +173,7 @@
               <li>Text various 3</li>
               <li>Text various 4</li>
             </ul>
-            <a href="" class="btn-default orange">Connect me</a>
+            <a href="#contact" class="btn-default orange">Connect me</a>
           </li>
           
           <li class="serv">
@@ -140,7 +184,7 @@
               <li>Text various 2</li>
               <li>Text various 3</li>
             </ul>
-            <a href="" class="btn-default orange">Connect me</a>
+            <a href="#contact" class="btn-default orange">Connect me</a>
           </li>
           
           <li class="serv">
@@ -151,7 +195,7 @@
               <li>Text various 2</li>
               <li>Text various 3</li>
             </ul>
-            <a href="" class="btn-default orange">Connect me</a>
+            <a href="#contact" class="btn-default orange">Connect me</a>
           </li>
           
           <li class="serv">
@@ -163,7 +207,7 @@
               <li>Text various 3</li>
               <li>Text various 4</li>
             </ul>
-            <a href="" class="btn-default orange">Connect me</a>
+            <a href="#contact" class="btn-default orange">Connect me</a>
           </li>
           
           <li class="serv">
@@ -173,18 +217,20 @@
               <li>Text various 1</li>
               <li>Text various 2</li>
             </ul>
-            <a href="" class="btn-default orange">Connect me</a>
+            <a href="#contact" class="btn-default orange">Connect me</a>
           </li>
         </ul>
       </div>
     </section>
-    
+
+
+<!--PORTFOLIO PAGE-->  
     <section id="portfolio">
       <div class="fully">
         <h2>Portfolio</h2>
         
         <ul class="work-tabs">
-          <li class="active" data-rel="work">All</li>
+          <li class="active" data-rel="all">All</li>
           <li data-rel="option-1">Analysis</li>
           <li data-rel="option-2">Planning</li>
           <li data-rel="option-3">Trend</li>
@@ -193,123 +239,150 @@
         </ul>
         
         <ul class="work-list">
-          <li class="work option-1">
+          <li class="all option-1" data-rel="work1">
             <img class="img" src="img/work.png" alt="">
             <span>Project information (Analysis)</span>
           </li>
-          <li class="work option-1">
-            <img class="img" src="img/work.png" alt="">
-            <span>Project information (Analysis)</span>
-          </li>
-          <li class="work option-1">
-            <img class="img" src="img/work.png" alt="">
-            <span>Project information (Analysis)</span>
-          </li>
-          <li class="work option-1">
-            <img class="img" src="img/work.png" alt="">
-            <span>Project information (Analysis)</span>
-          </li>
-          <li class="work option-1">
-            <img class="img" src="img/work.png" alt="">
-            <span>Project information (Analysis)</span>
-          </li>
-          <li class="work option-2">
+          
+          <li class="all option-2" data-rel="work2">
             <img class="img" src="img/work2.png" alt="">
             <span>Project information (Planning)</span>
           </li>
-          <li class="work option-2">
-            <img class="img" src="img/work2.png" alt="">
-            <span>Project information (Planning)</span>
-          </li>
-          <li class="work option-3">
-            <img class="img" src="img/work3.png" alt="">
-            <span>Project information (Trend)</span>
-          </li>
-          <li class="work option-3">
-            <img class="img" src="img/work3.png" alt="">
-            <span>Project information (Trend)</span>
-          </li>
-          <li class="work option-3">
+          
+          <li class="all option-3" data-rel="work3">
             <img class="img" src="img/work3.png" alt="">
             <span>Project information (Trend)</span>
           </li>
           
+          <li class="all option-4" data-rel="work4">
+            <img class="img" src="img/work4.png" alt="">
+            <span>Project information (Market)</span>
+          </li>
+          
+          <li class="all option-5" data-rel="work5">
+            <img class="img" src="img/work5.png" alt="">
+            <span>Project information (Leadership)</span>
+          </li>
+          
+          <li class="all option-4" data-rel="work4">
+            <img class="img" src="img/work4.png" alt="">
+            <span>Project information (Market)</span>
+          </li>
+          
+          <li class="all option-1" data-rel="work1">
+            <img class="img" src="img/work.png" alt="">
+            <span>Project information (Analysis)</span>
+          </li>
+          
+          <li class="all option-5" data-rel="work5">
+            <img class="img" src="img/work5.png" alt="">
+            <span>Project information (Leadership)</span>
+          </li>
+          
+          <li class="all option-1" data-rel="work1">
+            <img class="img" src="img/work.png" alt="">
+            <span>Project information (Analysis)</span>
+          </li>
+          
+          <li class="all option-5" data-rel="work5">
+            <img class="img" src="img/work5.png" alt="">
+            <span>Project information (Leadership)</span>
+          </li>
+          
+          <li class="all option-2" data-rel="work2">
+            <img class="img" src="img/work2.png" alt="">
+            <span>Project information (Planning)</span>
+          </li>
+          
+          <li class="all option-2" data-rel="work2">
+            <img class="img" src="img/work2.png" alt="">
+            <span>Project information (Planning)</span>
+          </li>
         </ul>
-        
+           
       </div>
     </section>
-    
-    <section id="blog" class="visible">
+
+
+<!--BLOG PAGE-->  
+    <section id="blog">
       <div class="fully">
         <h2>Blog</h2>
         
         <ul class="post-list">
-          <li>
+          <li data-rel="post1">
             <div class="img"><img src="img/post-1.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </li>
           
-          <li>
+          <li data-rel="post2">
             <div class="img"><img src="img/post-2.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sequi provident illum alias dolorum labore unde velit itaque iusto, ipsa beatae ipsam dolores! Illo provident ipsum esse unde, corrupti deleniti.</p>
           </li>
           
-          <li>
+          <li data-rel="post3">
             <div class="img"><img src="img/post-3.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sequi provident illum alias dolorum labore unde velit itaque iusto, ipsa beatae ipsam dolores! Illo provident ipsum esse unde, corrupti deleniti.</p>
           </li>
           
-          <li>
+          <li data-rel="post4">
             <div class="img"><img src="img/post-4.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sequi provident illum alias dolorum labore unde velit itaque iusto, ipsa beatae ipsam dolores! Illo provident ipsum esse unde, corrupti deleniti.</p>
           </li>
           
-          <li>
-            <div class="img"><img src="img/post-2.jpg" alt=""></div>
+          <li data-rel="post5">
+            <div class="img"><img src="img/post-5.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sequi provident illum alias dolorum labore unde velit itaque iusto, ipsa beatae ipsam dolores! Illo provident ipsum esse unde, corrupti deleniti.</p>
           </li>
           
-          <li>
-            <div class="img"><img src="img/post-3.jpg" alt=""></div>
+          <li data-rel="post6">
+            <div class="img"><img src="img/post-6.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sequi provident illum alias dolorum labore unde velit itaque iusto, ipsa beatae ipsam dolores! Illo provident ipsum esse unde, corrupti deleniti.</p>
           </li>
           
-          <li>
-            <div class="img"><img src="img/post-4.jpg" alt=""></div>
+          <li data-rel="post7">
+            <div class="img"><img src="img/post-7.jpg" alt=""></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sequi provident illum alias dolorum labore unde velit itaque iusto, ipsa beatae ipsam dolores! Illo provident ipsum esse unde, corrupti deleniti.</p>
           </li>
         </ul>
       </div>
     </section>
-    
+
+
+<!--CONTACT PAGE-->  
     <section id="contact" class="line-on">
       <div class="left">
         <h2>Contact</h2>
-        <p>333 Oklahoma Road, New York, NY 10024 <br> United States</p>
-        <p>Phone: (917) 407-5112</p>
-        <p>Email: workjones@gmail.com</p>
-        <p>Skype: jonesskype</p>
-        <p>Linkedin: joneslinked</p>
+        
+        <ul class="default">
+          <li><span class="blue">Address :</span> Oklahoma Road, New York, NY 10024 <br> United States</li>
+          <li><span class="blue">Phone :</span> (917) 407-5112</li>
+          <li><span class="blue">Email :</span> workjones@gmail.com</li>
+          <li><span class="blue">Skype :</span> jonesskype</li>
+          <li><span class="blue">Linkedin :</span> joneslinked</li>
+        </ul>
+        
       </div>
       
-      
       <div class="right">
-        <h3>Just say Hello!</h3>
+        <h3>Just write to me!</h3>
+        
         <br>
+        
         <form method="post" action="php/send.php">
           <div class="w50">
             <label for="fname">First Name</label>
-            <input required type="text" id="fname" name="fname" placeholder="Jones"/>
+            <input required type="text" id="fname" name="fname" placeholder="Jones">
           </div>
           
           <div class="w50">
             <label for="lname">Last Name</label>
-            <input required type="text" id="lname" name="lname" placeholder="Matthew"/>
+            <input required type="text" id="lname" name="lname" placeholder="Matthew">
           </div>
           
           <div class="w50">
             <label for="email">Email</label>
-            <input required type="email" id="email" name="email" placeholder="workjones@gmail.com"/>
+            <input required type="email" id="email" name="email" placeholder="workjones@gmail.com">
           </div>
           
           <div class="w50">
@@ -338,14 +411,84 @@
     </section>
     
   </main>
+  
+<!--END PAGES-->
+ 
+ 
+<!--POSTS CONTENT-->
+  <div class="modal post1">
+    <img class="img" src="img/post-1.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, cumque officia perspiciatis reiciendis. Amet suscipit, accusamus beatae est commodi incidunt a vero. Quae doloribus esse ipsam, perferendis, velit sed pariatur.</p>
+  </div>
+  
+  <div class="modal post2">
+    <img class="img" src="img/post-2.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+  </div> 
+  
+  <div class="modal post3">
+    <img class="img" src="img/post-3.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+  </div> 
+  
+  <div class="modal post4">
+    <img class="img" src="img/post-4.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+  </div> 
+  
+  <div class="modal post5">
+    <img class="img" src="img/post-5.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+  </div> 
+  
+  <div class="modal post6">
+    <img class="img" src="img/post-6.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+  </div> 
+  
+  <div class="modal post7">
+    <img class="img" src="img/post-7.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis, amet culpa repellendus eligendi quod qui voluptatibus, eum, vitae voluptatum blanditiis cumque perferendis est rerum facilis enim tempora asperiores facere!</p>
+  </div>
+  
+  
+<!--PORTFOLIO CONTENT-->
+  <div class="modal work1">
+    <img class="img" src="img/work.png" alt="">
+  </div>
+  
+  <div class="modal work2">
+    <img class="img" src="img/work2.png" alt="">
+  </div>
+  
+  <div class="modal work3">
+    <img class="img" src="img/work3.png" alt="">
+  </div>
+  
+  <div class="modal work4">
+    <img class="img" src="img/work4.png" alt="">
+  </div>
+  
+  <div class="modal work5">
+    <img class="img" src="img/work5.png" alt="">
+  </div>
+  
+  <div class="close-modal">
+    <span class="bar1"></span>
+    <span class="bar2"></span>
+  </div>
 
+<!--GRADIENT CIRCLES-->
   <div class="circle-left"></div>
   <div class="circle-right"></div>
 </div>
 
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/script.js"></script>
+
+<!--JS FILES-->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

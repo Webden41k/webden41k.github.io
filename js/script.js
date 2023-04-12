@@ -7,8 +7,10 @@ $(window).on('load', function() {
 $(document).ready(function () {
   $('.loader').on('click', function () {
     $(".loader-text").addClass("anim");
+    $(".hand-pointer").addClass("anim");
     $(".loader-text .name").addClass("animate__fadeOutLeft");
     $(".loader-text .spec").addClass("animate__fadeOutRight");
+    $(".hand-pointer").addClass("animate__fadeOutDown");
     $(this).delay(700).fadeOut(500);
     setTimeout(function () {
       $('.loader').remove();

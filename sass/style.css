@@ -53,14 +53,14 @@
   src: url("/fonts/sf-mono/SF-Mono-Regular.ttf");
   font-display: block; }
 
-/* line 71, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 71, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 body {
   background: #000;
   color: #fff;
   font-family: 'Saira';
   overflow: hidden; }
 
-/* line 78, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 78, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 h2 {
   font-family: 'SanMarinoBeach';
   font-size: 4rem;
@@ -72,7 +72,7 @@ h2 {
   position: relative;
   color: #b3a577;
   margin-bottom: 80px; }
-  /* line 90, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 90, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   h2:after {
     content: "";
     width: 40%;
@@ -85,7 +85,7 @@ h2 {
     bottom: 0;
     margin-left: -20%; }
 
-/* line 105, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 105, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 h3 {
   font-family: 'SF-MONO';
   font-size: 2rem;
@@ -95,7 +95,7 @@ h3 {
   100% {
     inset: 0; } }
 
-/* line 115, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 115, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 #preloader {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -103,7 +103,7 @@ h3 {
   width: 100%;
   height: 100%; }
 
-/* line 123, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 123, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .custom-loader {
   position: absolute;
   filter: none;
@@ -117,7 +117,7 @@ h3 {
   color: #fff;
   border: 2px solid;
   z-index: 5; }
-  /* line 137, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 137, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .custom-loader::before {
     content: "";
     position: absolute;
@@ -128,7 +128,7 @@ h3 {
     -webkit-animation: an 1.2s infinite;
     animation: an 1.2s infinite; }
 
-/* line 150, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 150, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .loader {
   background: #000;
   display: flex;
@@ -137,9 +137,11 @@ h3 {
   height: 100%;
   align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   cursor: pointer;
   z-index: 4; }
-  /* line 161, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 163, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .loader .loader-text {
     font-family: 'Saira-Thin';
     font-size: 1rem;
@@ -150,25 +152,43 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%; }
-    /* line 172, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 174, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .loader .loader-text.anim .name {
       border: none; }
-    /* line 176, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 178, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .loader .loader-text .name {
       font-family: 'Saira-Light';
       font-size: 1.2rem;
       border-right: 1px solid #888;
       margin-right: 11px;
       padding-right: 13px; }
+  /* line 188, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
+  .loader .hand-pointer {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    /* line 196, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
+    .loader .hand-pointer .text {
+      font-family: 'Saira-Thin';
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      padding-top: 8px;
+      letter-spacing: 0.1em; }
+    /* line 204, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
+    .loader .hand-pointer i {
+      font-size: 18px; }
 
-/* line 187, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 210, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .wrap {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: space-between; }
 
-/* line 195, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 218, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 section {
   filter: blur(4px);
   background: #111;
@@ -180,30 +200,30 @@ section {
   background: black;
   background: radial-gradient(circle, rgba(31, 54, 47, 0.3) 10%, rgba(0, 0, 0, 0.1) 100%);
   padding: 30px 50px; }
-  /* line 207, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 230, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   section.no-fix {
     height: auto;
     position: static; }
 
-/* line 214, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 237, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%; }
-  /* line 221, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 244, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .header .logo {
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
     position: relative;
     letter-spacing: 0.05em; }
-    /* line 228, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 251, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .logo .name {
       position: relative;
       z-index: 2; }
-    /* line 233, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 256, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .logo .spec {
       display: block;
       font-size: 12px;
@@ -216,18 +236,18 @@ section {
       top: 10px;
       transition: 0.2s;
       color: #b3a577; }
-    /* line 247, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 270, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .logo:hover .spec {
       opacity: 1;
       top: 27px;
       transition: 0.3s; }
-  /* line 254, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 277, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .header .nav-btn {
     position: relative;
     width: 35px;
     height: 36px;
     cursor: pointer; }
-    /* line 260, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 283, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn .bar {
       width: 35px;
       height: 2px;
@@ -237,45 +257,45 @@ section {
       left: 0px;
       top: 10px;
       transition: 0.3s; }
-      /* line 270, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 293, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .header .nav-btn .bar.bar2 {
         top: 24px; }
-    /* line 278, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 301, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn:hover .bar {
       background: #b3a577;
       transition: 0.3s; }
-    /* line 283, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 306, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn:hover .bar1 {
       top: 24px; }
-    /* line 287, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 310, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn:hover .bar2 {
       top: 10px; }
-    /* line 293, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 316, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn.active .bar {
       background: #b3a577;
       top: 16px; }
-    /* line 298, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 321, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn.active .bar1 {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
-    /* line 303, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 326, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .nav-btn.active .bar2 {
       -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg); }
-  /* line 310, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 333, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .header .menu {
     display: none;
     flex-direction: row;
     margin-left: auto;
     margin-right: 20px; }
-    /* line 316, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 339, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .menu.open {
       display: flex; }
-    /* line 320, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 343, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .header .menu li {
       counter-increment: item 1;
       margin-right: 15px; }
-      /* line 323, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 346, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .header .menu li a {
         font-family: "SF-MONO-L";
         font-size: 1rem;
@@ -286,29 +306,29 @@ section {
         position: relative;
         transform: rotateX(0deg);
         transition: 0.3s; }
-        /* line 334, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+        /* line 357, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
         .header .menu li a:before {
           content: "0" counter(item) ".";
           margin-right: 3px;
           text-align: right;
           color: #996515; }
-      /* line 343, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 366, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .header .menu li:hover a {
         color: #996515;
         transform: rotateX(360deg);
         transition: 0.3s; }
 
-/* line 354, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 377, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .main-info .fullname {
   font-size: 1.5rem;
   margin-bottom: 3rem;
   font-family: 'Poppins';
   text-align: center; }
-  /* line 360, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 383, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .main-info .fullname span {
     color: #b3a577; }
 
-/* line 365, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 388, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .main-info .profession {
   color: #b3a577;
   font-size: 8rem;
@@ -317,24 +337,24 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center; }
-  /* line 374, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 397, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .main-info .profession span {
     font-size: 6rem;
     line-height: 8rem;
     letter-spacing: 0.25em; }
 
-/* line 383, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 406, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  /* line 388, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 411, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .skills .skills-list {
     color: #b3a577;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row; }
-    /* line 394, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 417, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .skills .skills-list li {
       margin-bottom: 50px;
       font-size: 1.3rem;
@@ -342,28 +362,28 @@ section {
       text-align: center;
       cursor: pointer;
       width: 33.33%; }
-      /* line 402, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 425, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .skills .skills-list li i {
         display: block;
         font-size: 4rem;
         margin-bottom: 10px;
         color: #005F61; }
-      /* line 409, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 432, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .skills .skills-list li:hover {
         color: #996515; }
-        /* line 412, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+        /* line 435, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
         .skills .skills-list li:hover i {
           color: #005F61; }
 
-/* line 420, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 443, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .about {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  /* line 425, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 448, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .about h2 {
     margin-bottom: 40px; }
-  /* line 429, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 452, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .about p {
     font-size: 1.7rem;
     line-height: 3rem;
@@ -371,7 +391,7 @@ section {
     font-family: 'SF-MONO';
     max-width: 70%;
     margin-bottom: 10px; }
-  /* line 438, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 461, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .about .img-me {
     width: 230px;
     height: 230px;
@@ -382,7 +402,7 @@ section {
     -webkit-box-shadow: 0px 0px 0px 5px #b3a577;
     -moz-box-shadow: 0px 0px 0px 5px #b3a577;
     box-shadow: 0px 0px 0px 5px #b3a577; }
-    /* line 449, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 472, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .about .img-me img {
       display: block;
       position: absolute;
@@ -393,13 +413,13 @@ section {
       top: 50%;
       transform: translate(-50%, -50%); }
 
-/* line 463, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 486, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .works {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px; }
-  /* line 469, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 492, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .works .list-works {
     width: 100%;
     display: flex;
@@ -408,14 +428,14 @@ section {
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 100px; }
-    /* line 478, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 501, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .works .list-works .item {
       width: calc(33.33% - 27px);
       height: 300px;
       background: #b3a577;
       background: #222629;
       position: relative; }
-      /* line 485, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 508, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .works .list-works .item a {
         display: flex;
         width: 100%;
@@ -429,7 +449,7 @@ section {
         font-size: 1.4rem;
         letter-spacing: 0.0em;
         padding: 0 20px; }
-        /* line 500, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+        /* line 523, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
         .works .list-works .item a .name {
           font-family: 'Saira-Bold';
           font-size: 4rem;
@@ -437,72 +457,72 @@ section {
           letter-spacing: 0.1em;
           margin-bottom: 15px;
           color: #fff; }
-      /* line 510, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 533, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .works .list-works .item:hover {
         background: #005F61; }
-        /* line 513, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+        /* line 536, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
         .works .list-works .item:hover a {
           color: #000; }
 
-/* line 524, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 547, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .footer .from {
   font-size: 1rem;
   line-height: 1.7rem;
   letter-spacing: 0.03em;
   font-family: 'Saira-Light'; }
-  /* line 530, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 553, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .footer .from .state {
     display: block;
     border-left: 1px solid #005BBB;
     padding-left: 10px; }
-  /* line 536, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 559, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .footer .from .city {
     display: block;
     border-left: 1px solid #FFD500;
     padding-left: 10px; }
 
-/* line 543, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 566, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .footer .copyright {
   font-family: 'Saira-Light';
   font-size: 1rem;
   letter-spacing: 0.02em; }
-  /* line 548, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 571, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .footer .copyright.c {
     text-align: center; }
 
-/* line 553, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 576, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .footer .contacts {
   position: fixed;
   bottom: 0;
   right: 55px; }
 
-/* line 559, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+/* line 582, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
 .footer .list-contacts {
   display: flex;
   flex-direction: column;
   position: relative;
   padding-bottom: 90px;
   align-items: center; }
-  /* line 566, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 589, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .footer .list-contacts li {
     margin-bottom: 7px; }
-    /* line 568, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 591, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .footer .list-contacts li a {
       display: block;
       padding: 3px; }
-      /* line 572, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+      /* line 595, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
       .footer .list-contacts li a:hover i {
         color: #b3a577;
         -webkit-transform: scale(1.2);
         transform: scale(1.2); }
-    /* line 579, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+    /* line 602, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
     .footer .list-contacts li i {
       display: block;
       color: #fff;
       font-size: 20px;
       line-height: 20px;
       text-shadow: none; }
-  /* line 588, /Users/webden41k/Desktop/webden41k 2/sass/style.scss */
+  /* line 611, /Users/webden41k/Desktop/works/webden41k 2/sass/style.scss */
   .footer .list-contacts:after {
     content: "";
     display: block;

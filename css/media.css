@@ -9,6 +9,7 @@
   
   .works .list-works{
     gap: 30px;
+    margin-bottom: 30px;
   }
   
   .works .list-works .item {
@@ -39,6 +40,36 @@
   
   .about p{
     max-width: 85%;
+  }
+  
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .footer .list-contacts li{
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+  
+  .footer .copyright{
+    width: auto;
+  }
+  
+  .footer .contacts{
+    position: static;
+  }
+  
+  .footer .list-contacts{
+    padding-bottom: 0;
+    flex-direction: row;
+  }
+  
+  .footer .list-contacts:after{
+    display: none;
   }
 }
 
@@ -201,35 +232,6 @@
     font-size: 1.25rem;
   }
   
-  .footer .list-contacts{
-    flex-direction: row;
-    padding-bottom: 0;
-  }
-  
-  .footer .list-contacts:after{
-    display: none;
-  }
-  
-  .footer .contacts{
-    position: static;
-  }
-  
-  .footer .list-contacts li{
-    margin-bottom: 0;
-    margin-left: 10px;
-  }
-  
-  .footer .list-contacts li i{
-    font-size: 30px;
-    line-height: 30px;
-  }
-  
-  .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
   
   .loader .loader-text{
     font-size: 0.9rem;
